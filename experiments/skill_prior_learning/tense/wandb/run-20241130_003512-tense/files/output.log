@@ -1,0 +1,108 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 742
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len val dataset 160
+Running Testing
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd490>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd520>
+
+Test set: Average loss: 5.6927 in 0.13s
+
+starting epoch  0
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+/home/zzz/spirl-master/spirl/utils/pytorch_utils.py:339: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:1025.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 0 Train Epoch: 0 [0/50 (0%)]	Loss: 11310.214844
+avg time for loading: 0.13s, logs: 0.00s, compute: 0.03s, total: 0.16s
+ETA: 0.05h
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15f6d0>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15fa30>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15fa30>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a15fa30>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe7b38c0c10>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da100>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5a3d60>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a153160>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a0c9640>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd340>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da250>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd340>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da250>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd340>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a133610>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5da250>
+<spirl.modules.variational_inference.MultivariateGaussian object at 0x7fe79a5cd340>
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep0.pth!
+Running Testing
+Exception ignored in: <function _releaseLock at 0x7fe7f2fcd8b0>
+Traceback (most recent call last):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/logging/__init__.py", line 227, in _releaseLock
+    def _releaseLock():
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 990, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/queues.py", line 108, in get
+    raise Empty
+_queue.Empty
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "spirl/train.py", line 405, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 79, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 124, in train
+    self.val()
+  File "spirl/train.py", line 193, in val
+    for batch_idx, sample_batched in enumerate(self.val_loader):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1186, in _next_data
+    idx, data = self._get_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1152, in _get_data
+    success, data = self._try_get_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1003, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 1415843, 1415859) exited unexpectedly

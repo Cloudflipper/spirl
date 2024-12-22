@@ -1,0 +1,115 @@
+Creating window glfw
+exp_dir:	./experiments
+conf_path:	spirl/configs/rl/tense/conf.py
+general:
+	seed:	0
+	agent:	<class 'spirl.rl.agents.prior_sac_agent.ActionPriorSACAgent'>
+	environment:	<class 'tensegrity_env.tensegrity_env.envs.tensegrity_env.tensegrity_env'>
+	data_dir:	.
+	num_epochs:	100
+	max_rollout_len:	280
+	n_steps_per_epoch:	50000
+	n_warmup_steps:	5000.0
+agent:
+	policy:	<class 'spirl.rl.policies.prior_policies.LearnedPriorAugmentedPIPolicy'>
+	policy_params:
+		action_dim:	6
+		input_dim:	39
+		n_layers:	5
+		nz_mid:	256
+		max_action_range:	1.0
+		prior_model:	<class 'spirl.models.bc_mdl.BCMdl'>
+		prior_model_params:
+			state_dim:	39
+			action_dim:	6
+		prior_model_checkpoint:	./experiments/skill_prior_learning/tense
+	critic:	<class 'spirl.rl.components.critic.MLPCritic'>
+	critic_params:
+		action_dim:	6
+		input_dim:	39
+		output_dim:	1
+		n_layers:	2
+		nz_mid:	256
+		action_input:	True
+	replay:	<class 'spirl.rl.components.replay_buffer.UniformReplayBuffer'>
+	replay_params:
+		capacity:	100000.0
+		dump_replay:	False
+	clip_q_target:	False
+	batch_size:	256
+	log_video_caption:	True
+	td_schedule_params:
+		p:	1.0
+	device:	cpu
+	env_params:
+data:
+	dataset_spec:
+		dataset_class:	<class 'spirl.data.tense.kitchen_data_loader.D4RLSequenceSplitDataset'>
+		n_actions:	6
+		state_dim:	39
+		env_name:	tensegrity_env-v0
+		res:	128
+		crop_rand_subseq:	True
+		max_seq_len:	280
+env:
+	reward_norm:	1.0
+	device:	cpu
+	seed:	0
+sampler:
+ckpt_path:	None
+notes:	non-hierarchical RL experiments in tensegrity env
+mpi:
+	rank:	0
+	is_chef:	True
+	num_workers:	1
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Loading from: ./experiments/skill_prior_learning/tense/weights
+=> loading checkpoint './experiments/skill_prior_learning/tense/weights/weights_ep19.pth'
+=> loaded checkpoint './experiments/skill_prior_learning/tense/weights/weights_ep19.pth' (epoch 19)
+Loading from: ./experiments/skill_prior_learning/tense/weights
+=> loading checkpoint './experiments/skill_prior_learning/tense/weights/weights_ep19.pth'
+=> loaded checkpoint './experiments/skill_prior_learning/tense/weights/weights_ep19.pth' (epoch 19)
+Warmup data collection for 5000.0 steps...
+[-0.23181147 -0.78941212  0.20773481 -0.24555927  0.2022645   1.07307811] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-1.53605121  1.71206082  0.69014443 -0.31751068 -2.06279935  0.29215638] 0.1 0 [-0.15360512 -0.15       -0.15       -0.15       -0.20627994 -0.15      ]
+[-0.52842297 -0.7241978  -1.78303224  0.10879033 -0.59701511 -0.72951093] 0.1 0 [-0.15       -0.15       -0.17830322 -0.15       -0.15       -0.15      ]
+[-1.47801404 -0.2366853   0.23030282 -0.54268402  1.24260859  0.3844347 ] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-1.14338582 -0.04613096  1.26486797 -0.46906758 -1.85538713 -1.23091337] 0.1 0 [-0.15       -0.15       -0.15       -0.15       -0.18553871 -0.15      ]
+[ 1.59305461  0.78194779  2.06796501  0.09197602 -0.0204185   1.53660875] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-0.41782084 -1.04221996 -0.26881746 -0.09205746 -0.11469207  0.39002551] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-0.89889675  0.1603815  -0.95297457 -0.20115914  0.68695982 -1.00237312] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-1.43377668  0.81531065 -0.26262265  0.57514739  0.70497602 -0.04012473] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-0.41927307 -0.32206533  1.04763265  0.5308589  -0.54856178 -1.05218459] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-0.19812309 -0.00985006 -0.11973899  1.00514263  0.34518399  0.147855  ] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[ 0.45280437  1.73101687  0.6203612  -1.06231454 -0.6007508  -1.20441003] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+[-0.73405849 -0.58116674 -0.43659124 -0.44304447  0.00932187 -0.5628223 ] 0.1 0 [-0.15 -0.15 -0.15 -0.15 -0.15 -0.15]
+Traceback (most recent call last):
+  File "spirl/rl/train.py", line 327, in <module>
+    RLTrainer(args=get_args())
+  File "spirl/rl/train.py", line 77, in __init__
+    self.train(start_epoch)
+  File "spirl/rl/train.py", line 105, in train
+    self.warmup()
+  File "spirl/rl/train.py", line 197, in warmup
+    self.sampler.init(is_train=True)
+  File "/home/zzz/spirl-master/spirl/rl/components/sampler.py", line 30, in init
+    self._episode_reset()
+  File "/home/zzz/spirl-master/spirl/rl/components/sampler.py", line 120, in _episode_reset
+    self._obs = self._postprocess_obs(self._reset_env())
+  File "/home/zzz/spirl-master/spirl/rl/components/sampler.py", line 124, in _reset_env
+    return self._env.reset()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/mujoco/mujoco_env.py", line 107, in reset
+    ob = self.reset_model()
+  File "/home/zzz/spirl-master/tensegrity_env/tensegrity_env/envs/tensegrity_env.py", line 523, in reset_model
+    self.step(tendons)
+  File "/home/zzz/spirl-master/tensegrity_env/tensegrity_env/envs/tensegrity_env.py", line 306, in step
+    self.do_simulation(action, self.frame_skip)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/mujoco/mujoco_env.py", line 125, in do_simulation
+    self.sim.step()
+  File "mjsim.pyx", line 126, in mujoco_py.cymj.MjSim.step
+  File "cymj.pyx", line 156, in mujoco_py.cymj.wrap_mujoco_warning.__exit__
+  File "cymj.pyx", line 77, in mujoco_py.cymj.c_warning_callback
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/mujoco_py/builder.py", line 360, in user_warning_raise_exception
+    raise MujocoException('Got MuJoCo Warning: {}'.format(warn))
+mujoco_py.builder.MujocoException: Got MuJoCo Warning: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.2400.

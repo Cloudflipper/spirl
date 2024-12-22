@@ -1,0 +1,43 @@
+{
+  "os":  "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.17",
+  "python":  "3.8.20",
+  "startedAt":  "2024-11-08T05:43:45.075450Z",
+  "args":  [
+    "--path=spirl/configs/hrl/kitchen/spirl_cl",
+    "--seed=0",
+    "--prefix=SPIRL_kitchen_seed0"
+  ],
+  "program":  "spirl/rl/train.py",
+  "codePath":  "spirl/rl/train.py",
+  "email":  "cldflpr@umich.edu",
+  "root":  "./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0",
+  "host":  "lmr",
+  "username":  "zzz",
+  "executable":  "/home/zzz/miniconda3/envs/mujoco/bin/python3",
+  "codePathLocal":  "spirl/rl/train.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1081101176832",
+      "used":  "12574670848"
+    }
+  },
+  "memory":  {
+    "total":  "8158277632"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  16
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+      "memoryTotal":  "4294967296",
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.5"
+}

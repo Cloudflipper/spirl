@@ -1,0 +1,1814 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+Downloading dataset: http://rail.eecs.berkeley.edu/datasets/offline_rl/kitchen/kitchen_microwave_kettle_bottomburner_light-v0.hdf5 to /home/zzz/.d4rl/datasets/kitchen_microwave_kettle_bottomburner_light-v0.hdf5
+load datafile: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 39.21it/s]
+len train dataset 12325
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+load datafile: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 40.16it/s]
+len val dataset 160
+Running Testing
+Eval time for batch:  1.892106533050537
+mse: 0.13986718919477426
+/home/zzz/spirl-master/spirl/utils/vis_utils.py:25: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  plt.xlim(0, array.shape[0] - 1)
+val 0: logging videos
+
+Test set: Average loss: 15.3500 in 2.63s
+
+starting epoch  0
+/home/zzz/spirl-master/spirl/utils/pytorch_utils.py:339: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:1025.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+train 0: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 0 Train Epoch: 0 [0/4800 (0%)]	Loss: 119.301468
+avg time for loading: 0.46s, logs: 0.13s, compute: 0.10s, total: 0.70s
+ETA: 93.21h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 2. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 2. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 2. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 2. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 500 Train Epoch: 0 [500/4800 (10%)]	Loss: 0.236174
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.06s
+ETA: 8.60h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 1000 Train Epoch: 0 [1000/4800 (21%)]	Loss: -0.640211
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.55h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 1500 Train Epoch: 0 [1500/4800 (31%)]	Loss: 0.273565
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.92h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 2000 Train Epoch: 0 [2000/4800 (42%)]	Loss: 3.670383
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.94h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 2500 Train Epoch: 0 [2500/4800 (52%)]	Loss: 2.095146
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 10.14h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 3000 Train Epoch: 0 [3000/4800 (62%)]	Loss: 2.675224
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 10.30h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 3500 Train Epoch: 0 [3500/4800 (73%)]	Loss: 4.784245
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 10.33h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 4000 Train Epoch: 0 [4000/4800 (83%)]	Loss: 5.048686
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 4500 Train Epoch: 0 [4500/4800 (94%)]	Loss: 4.872911
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.74h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep0.pth!
+Running Testing
+Eval time for batch:  1.8193573951721191
+mse: 0.03022963286639424
+val 4800: logging videos
+
+Test set: Average loss: 4.6149 in 2.13s
+
+starting epoch  1
+train 4800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 4800 Train Epoch: 1 [0/4800 (0%)]	Loss: 4.913626
+avg time for loading: 0.51s, logs: 0.16s, compute: 0.14s, total: 0.81s
+ETA: 107.07h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4800 that is less than the current step 4802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 5000 Train Epoch: 1 [200/4800 (4%)]	Loss: 5.443980
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 11.06h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 5500 Train Epoch: 1 [700/4800 (15%)]	Loss: 4.891570
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 10.39h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 6000 Train Epoch: 1 [1200/4800 (25%)]	Loss: 6.067121
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.57h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 6500 Train Epoch: 1 [1700/4800 (35%)]	Loss: 6.185612
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.66h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 7000 Train Epoch: 1 [2200/4800 (46%)]	Loss: 6.447958
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.61h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 7500 Train Epoch: 1 [2700/4800 (56%)]	Loss: 6.469737
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.57h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 8000 Train Epoch: 1 [3200/4800 (67%)]	Loss: 6.543142
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.52h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 8500 Train Epoch: 1 [3700/4800 (77%)]	Loss: 7.321793
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.44h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 9000 Train Epoch: 1 [4200/4800 (88%)]	Loss: 7.109126
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.44h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 9500 Train Epoch: 1 [4700/4800 (98%)]	Loss: 6.440606
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.73h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep1.pth!
+starting epoch  2
+train 9600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 9600 Train Epoch: 2 [0/4800 (0%)]	Loss: 7.159885
+avg time for loading: 0.71s, logs: 0.23s, compute: 0.27s, total: 1.21s
+ETA: 158.20h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 10000 Train Epoch: 2 [400/4800 (8%)]	Loss: 6.497794
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.13s
+ETA: 16.53h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 10500 Train Epoch: 2 [900/4800 (19%)]	Loss: 6.571036
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 16.08h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 11000 Train Epoch: 2 [1400/4800 (29%)]	Loss: 7.101892
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.71h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 11500 Train Epoch: 2 [1900/4800 (40%)]	Loss: 7.602571
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.45h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 12000 Train Epoch: 2 [2400/4800 (50%)]	Loss: 7.971094
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.51h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9600 that is less than the current step 9601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9600 that is less than the current step 9601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9600 that is less than the current step 9601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9600 that is less than the current step 9601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 12500 Train Epoch: 2 [2900/4800 (60%)]	Loss: 7.562232
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.37h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 13000 Train Epoch: 2 [3400/4800 (71%)]	Loss: 7.776157
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 15.28h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 13500 Train Epoch: 2 [3900/4800 (81%)]	Loss: 8.292919
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.20h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 14000 Train Epoch: 2 [4400/4800 (92%)]	Loss: 7.749985
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.15h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep2.pth!
+starting epoch  3
+train 14400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 14400 Train Epoch: 3 [0/4800 (0%)]	Loss: 7.506167
+avg time for loading: 0.86s, logs: 0.23s, compute: 0.24s, total: 1.33s
+ETA: 172.09h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14400 that is less than the current step 14401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14400 that is less than the current step 14401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14400 that is less than the current step 14401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14400 that is less than the current step 14401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 14500 Train Epoch: 3 [100/4800 (2%)]	Loss: 8.050056
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.10s, total: 0.13s
+ETA: 16.52h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 15000 Train Epoch: 3 [600/4800 (12%)]	Loss: 7.532153
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 15.17h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 15500 Train Epoch: 3 [1100/4800 (23%)]	Loss: 7.930851
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.12s
+ETA: 14.98h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 16000 Train Epoch: 3 [1600/4800 (33%)]	Loss: 8.000079
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.86h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 16500 Train Epoch: 3 [2100/4800 (44%)]	Loss: 8.504429
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.69h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 17000 Train Epoch: 3 [2600/4800 (54%)]	Loss: 7.151171
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.70h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 17500 Train Epoch: 3 [3100/4800 (65%)]	Loss: 8.134685
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.66h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 18000 Train Epoch: 3 [3600/4800 (75%)]	Loss: 8.605317
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.68h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 18500 Train Epoch: 3 [4100/4800 (85%)]	Loss: 8.300573
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.68h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 19000 Train Epoch: 3 [4600/4800 (96%)]	Loss: 8.488955
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 14.68h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep3.pth!
+starting epoch  4
+train 19200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 19200 Train Epoch: 4 [0/4800 (0%)]	Loss: 7.851450
+avg time for loading: 0.47s, logs: 0.14s, compute: 0.10s, total: 0.72s
+ETA: 91.87h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19200 that is less than the current step 19201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19200 that is less than the current step 19201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19200 that is less than the current step 19201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19200 that is less than the current step 19201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 19500 Train Epoch: 4 [300/4800 (6%)]	Loss: 8.188243
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.15h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 20000 Train Epoch: 4 [800/4800 (17%)]	Loss: 7.817253
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 20500 Train Epoch: 4 [1300/4800 (27%)]	Loss: 8.690146
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.07s
+ETA: 9.51h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 21000 Train Epoch: 4 [1800/4800 (38%)]	Loss: 8.201449
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.67h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 21500 Train Epoch: 4 [2300/4800 (48%)]	Loss: 8.474095
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.96h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 22000 Train Epoch: 4 [2800/4800 (58%)]	Loss: 7.967265
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.11h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 22500 Train Epoch: 4 [3300/4800 (69%)]	Loss: 8.468408
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.08h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 23000 Train Epoch: 4 [3800/4800 (79%)]	Loss: 8.572057
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.06h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 23500 Train Epoch: 4 [4300/4800 (90%)]	Loss: 8.090873
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.04h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep4.pth!
+starting epoch  5
+train 24000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 24000 Train Epoch: 5 [0/4800 (0%)]	Loss: 8.363598
+avg time for loading: 0.55s, logs: 0.14s, compute: 0.12s, total: 0.80s
+ETA: 101.53h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24000 that is less than the current step 24001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24000 that is less than the current step 24001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24000 that is less than the current step 24001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24000 that is less than the current step 24001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 24500 Train Epoch: 5 [500/4800 (10%)]	Loss: 8.427899
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.13h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 25000 Train Epoch: 5 [1000/4800 (21%)]	Loss: 8.800371
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.15h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 25500 Train Epoch: 5 [1500/4800 (31%)]	Loss: 8.936505
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.96h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 26000 Train Epoch: 5 [2000/4800 (42%)]	Loss: 8.764228
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.89h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 26500 Train Epoch: 5 [2500/4800 (52%)]	Loss: 8.404838
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.95h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 27000 Train Epoch: 5 [3000/4800 (62%)]	Loss: 8.260413
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.34h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 27500 Train Epoch: 5 [3500/4800 (73%)]	Loss: 9.150971
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.45h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 28000 Train Epoch: 5 [4000/4800 (83%)]	Loss: 8.708024
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.40h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 28500 Train Epoch: 5 [4500/4800 (94%)]	Loss: 8.483916
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.36h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep5.pth!
+Running Testing
+Eval time for batch:  1.7550983428955078
+mse: 0.013654351589138969
+val 28800: logging videos
+
+Test set: Average loss: 8.6767 in 2.11s
+
+starting epoch  6
+train 28800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 28800 Train Epoch: 6 [0/4800 (0%)]	Loss: 8.557497
+avg time for loading: 0.62s, logs: 0.17s, compute: 0.12s, total: 0.92s
+ETA: 114.71h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28800 that is less than the current step 28802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 29000 Train Epoch: 6 [200/4800 (4%)]	Loss: 9.182297
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.32h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 29500 Train Epoch: 6 [700/4800 (15%)]	Loss: 9.096898
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.18h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 30000 Train Epoch: 6 [1200/4800 (25%)]	Loss: 8.848998
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.20h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 30500 Train Epoch: 6 [1700/4800 (35%)]	Loss: 8.499452
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.24h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 31000 Train Epoch: 6 [2200/4800 (46%)]	Loss: 8.495646
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.15h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 31500 Train Epoch: 6 [2700/4800 (56%)]	Loss: 8.583365
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.16h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 32000 Train Epoch: 6 [3200/4800 (67%)]	Loss: 9.183210
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 32500 Train Epoch: 6 [3700/4800 (77%)]	Loss: 8.191896
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.18h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 33000 Train Epoch: 6 [4200/4800 (88%)]	Loss: 9.086397
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.19h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 33500 Train Epoch: 6 [4700/4800 (98%)]	Loss: 9.200610
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.13h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep6.pth!
+starting epoch  7
+train 33600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 33600 Train Epoch: 7 [0/4800 (0%)]	Loss: 9.093940
+avg time for loading: 0.54s, logs: 0.15s, compute: 0.11s, total: 0.80s
+ETA: 98.98h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 33600 that is less than the current step 33601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 33600 that is less than the current step 33601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 33600 that is less than the current step 33601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 33600 that is less than the current step 33601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 34000 Train Epoch: 7 [400/4800 (8%)]	Loss: 9.501560
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.74h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 34500 Train Epoch: 7 [900/4800 (19%)]	Loss: 8.536865
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.75h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 35000 Train Epoch: 7 [1400/4800 (29%)]	Loss: 9.028982
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.69h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 35500 Train Epoch: 7 [1900/4800 (40%)]	Loss: 9.583618
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 36000 Train Epoch: 7 [2400/4800 (50%)]	Loss: 8.589038
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.90h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 36500 Train Epoch: 7 [2900/4800 (60%)]	Loss: 8.858238
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.83h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 37000 Train Epoch: 7 [3400/4800 (71%)]	Loss: 9.236725
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 9.84h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 37500 Train Epoch: 7 [3900/4800 (81%)]	Loss: 9.002252
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.93h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 38000 Train Epoch: 7 [4400/4800 (92%)]	Loss: 9.706090
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.20h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep7.pth!
+starting epoch  8
+train 38400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 38400 Train Epoch: 8 [0/4800 (0%)]	Loss: 8.864087
+avg time for loading: 0.87s, logs: 0.15s, compute: 0.28s, total: 1.30s
+ETA: 159.01h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 38400 that is less than the current step 38401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 38400 that is less than the current step 38401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 38400 that is less than the current step 38401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 38400 that is less than the current step 38401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 38500 Train Epoch: 8 [100/4800 (2%)]	Loss: 9.492736
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.08s, total: 0.11s
+ETA: 13.29h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 39000 Train Epoch: 8 [600/4800 (12%)]	Loss: 9.126595
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 11.11h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 39500 Train Epoch: 8 [1100/4800 (23%)]	Loss: 8.719697
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.68h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 40000 Train Epoch: 8 [1600/4800 (33%)]	Loss: 8.959488
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.35h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 40500 Train Epoch: 8 [2100/4800 (44%)]	Loss: 8.729442
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.30h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 41000 Train Epoch: 8 [2600/4800 (54%)]	Loss: 8.797380
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 41500 Train Epoch: 8 [3100/4800 (65%)]	Loss: 9.127705
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.29h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 42000 Train Epoch: 8 [3600/4800 (75%)]	Loss: 9.398134
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.23h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 42500 Train Epoch: 8 [4100/4800 (85%)]	Loss: 9.058947
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.22h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 43000 Train Epoch: 8 [4600/4800 (96%)]	Loss: 9.256613
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.27h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep8.pth!
+starting epoch  9
+train 43200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 43200 Train Epoch: 9 [0/4800 (0%)]	Loss: 9.287256
+avg time for loading: 0.61s, logs: 0.17s, compute: 0.12s, total: 0.90s
+ETA: 109.00h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 43200 that is less than the current step 43201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 43200 that is less than the current step 43201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 43200 that is less than the current step 43201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 43200 that is less than the current step 43201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 43500 Train Epoch: 9 [300/4800 (6%)]	Loss: 8.995976
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.62h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 44000 Train Epoch: 9 [800/4800 (17%)]	Loss: 9.095771
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 44500 Train Epoch: 9 [1300/4800 (27%)]	Loss: 8.983872
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.08h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 45000 Train Epoch: 9 [1800/4800 (38%)]	Loss: 9.847065
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.10h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 45500 Train Epoch: 9 [2300/4800 (48%)]	Loss: 8.685242
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.05h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 46000 Train Epoch: 9 [2800/4800 (58%)]	Loss: 8.769729
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.98h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 46500 Train Epoch: 9 [3300/4800 (69%)]	Loss: 9.719804
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.94h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 47000 Train Epoch: 9 [3800/4800 (79%)]	Loss: 8.821944
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.92h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 47500 Train Epoch: 9 [4300/4800 (90%)]	Loss: 10.049510
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.84h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep9.pth!
+starting epoch  10
+train 48000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 48000 Train Epoch: 10 [0/4800 (0%)]	Loss: 9.013073
+avg time for loading: 0.56s, logs: 0.16s, compute: 0.14s, total: 0.86s
+ETA: 102.82h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 48000 that is less than the current step 48001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 48000 that is less than the current step 48001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 48000 that is less than the current step 48001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 48000 that is less than the current step 48001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 48500 Train Epoch: 10 [500/4800 (10%)]	Loss: 9.062324
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.71h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 49000 Train Epoch: 10 [1000/4800 (21%)]	Loss: 9.321969
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.61h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 49500 Train Epoch: 10 [1500/4800 (31%)]	Loss: 10.193092
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.84h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 50000 Train Epoch: 10 [2000/4800 (42%)]	Loss: 9.218226
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.89h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 50500 Train Epoch: 10 [2500/4800 (52%)]	Loss: 9.519938
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.19h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 51000 Train Epoch: 10 [3000/4800 (62%)]	Loss: 9.411297
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 10.82h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 51500 Train Epoch: 10 [3500/4800 (73%)]	Loss: 8.961514
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 10.83h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 52000 Train Epoch: 10 [4000/4800 (83%)]	Loss: 9.603436
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 10.77h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 52500 Train Epoch: 10 [4500/4800 (94%)]	Loss: 9.255964
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 10.77h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep10.pth!
+Running Testing
+Eval time for batch:  2.3976569175720215
+mse: 0.012511466218711575
+val 52800: logging videos
+
+Test set: Average loss: 10.9957 in 2.94s
+
+starting epoch  11
+train 52800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 52800 Train Epoch: 11 [0/4800 (0%)]	Loss: 9.536230
+avg time for loading: 0.71s, logs: 0.18s, compute: 0.14s, total: 1.03s
+ETA: 121.99h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 52800 that is less than the current step 52802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 53000 Train Epoch: 11 [200/4800 (4%)]	Loss: 9.041965
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.10s
+ETA: 11.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 53500 Train Epoch: 11 [700/4800 (15%)]	Loss: 8.829887
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.23h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 54000 Train Epoch: 11 [1200/4800 (25%)]	Loss: 8.422949
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.09h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 54500 Train Epoch: 11 [1700/4800 (35%)]	Loss: 9.472913
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.97h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 55000 Train Epoch: 11 [2200/4800 (46%)]	Loss: 8.676051
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.85h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 55500 Train Epoch: 11 [2700/4800 (56%)]	Loss: 9.578762
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.93h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 56000 Train Epoch: 11 [3200/4800 (67%)]	Loss: 9.044433
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.95h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 56500 Train Epoch: 11 [3700/4800 (77%)]	Loss: 9.228110
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.94h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 57000 Train Epoch: 11 [4200/4800 (88%)]	Loss: 9.402533
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.06h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 57500 Train Epoch: 11 [4700/4800 (98%)]	Loss: 9.171457
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 10.00h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep11.pth!
+starting epoch  12
+train 57600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 57600 Train Epoch: 12 [0/4800 (0%)]	Loss: 9.851653
+avg time for loading: 0.80s, logs: 0.20s, compute: 0.14s, total: 1.14s
+ETA: 133.92h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 57600 that is less than the current step 57601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 57600 that is less than the current step 57601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 57600 that is less than the current step 57601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 57600 that is less than the current step 57601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 58000 Train Epoch: 12 [400/4800 (8%)]	Loss: 9.253016
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.47h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 58500 Train Epoch: 12 [900/4800 (19%)]	Loss: 9.069169
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 10.28h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 59000 Train Epoch: 12 [1400/4800 (29%)]	Loss: 8.898734
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.98h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 59500 Train Epoch: 12 [1900/4800 (40%)]	Loss: 9.168777
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.84h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 60000 Train Epoch: 12 [2400/4800 (50%)]	Loss: 9.574474
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.78h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 60500 Train Epoch: 12 [2900/4800 (60%)]	Loss: 9.338148
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.97h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 61000 Train Epoch: 12 [3400/4800 (71%)]	Loss: 9.221172
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.97h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 61500 Train Epoch: 12 [3900/4800 (81%)]	Loss: 8.978958
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.99h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 62000 Train Epoch: 12 [4400/4800 (92%)]	Loss: 9.080628
+avg time for loading: 0.02s, logs: -0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.99h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep12.pth!
+starting epoch  13
+train 62400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 62400 Train Epoch: 13 [0/4800 (0%)]	Loss: 9.383949
+avg time for loading: 0.63s, logs: 0.17s, compute: 0.13s, total: 0.93s
+ETA: 107.64h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 62400 that is less than the current step 62401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 62400 that is less than the current step 62401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 62400 that is less than the current step 62401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 62400 that is less than the current step 62401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 62500 Train Epoch: 13 [100/4800 (2%)]	Loss: 9.534548
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 11.94h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 63000 Train Epoch: 13 [600/4800 (12%)]	Loss: 8.842834
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.85h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 63500 Train Epoch: 13 [1100/4800 (23%)]	Loss: 9.616898
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.72h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 64000 Train Epoch: 13 [1600/4800 (33%)]	Loss: 8.987196
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.63h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 64500 Train Epoch: 13 [2100/4800 (44%)]	Loss: 9.380219
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 65000 Train Epoch: 13 [2600/4800 (54%)]	Loss: 9.617657
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.79h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 65500 Train Epoch: 13 [3100/4800 (65%)]	Loss: 9.140083
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.77h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 66000 Train Epoch: 13 [3600/4800 (75%)]	Loss: 10.327202
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.87h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 66500 Train Epoch: 13 [4100/4800 (85%)]	Loss: 9.114185
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.84h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 67000 Train Epoch: 13 [4600/4800 (96%)]	Loss: 10.150222
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.82h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep13.pth!
+starting epoch  14
+train 67200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 67200 Train Epoch: 14 [0/4800 (0%)]	Loss: 9.894003
+avg time for loading: 0.79s, logs: 0.22s, compute: 0.17s, total: 1.18s
+ETA: 135.86h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 67200 that is less than the current step 67201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 67200 that is less than the current step 67201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 67200 that is less than the current step 67201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 67200 that is less than the current step 67201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 67500 Train Epoch: 14 [300/4800 (6%)]	Loss: 9.835155
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 10.26h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 68000 Train Epoch: 14 [800/4800 (17%)]	Loss: 9.640683
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.67h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 68500 Train Epoch: 14 [1300/4800 (27%)]	Loss: 9.950949
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.70h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 69000 Train Epoch: 14 [1800/4800 (38%)]	Loss: 9.061203
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.62h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 69500 Train Epoch: 14 [2300/4800 (48%)]	Loss: 9.311960
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.63h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 70000 Train Epoch: 14 [2800/4800 (58%)]	Loss: 9.395116
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.61h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 70500 Train Epoch: 14 [3300/4800 (69%)]	Loss: 9.368631
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.56h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 71000 Train Epoch: 14 [3800/4800 (79%)]	Loss: 10.370294
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 71500 Train Epoch: 14 [4300/4800 (90%)]	Loss: 9.750220
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.49h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep14.pth!
+starting epoch  15
+train 72000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 72000 Train Epoch: 15 [0/4800 (0%)]	Loss: 9.652712
+avg time for loading: 0.86s, logs: 0.24s, compute: 0.17s, total: 1.26s
+ETA: 142.76h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 72000 that is less than the current step 72001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 72000 that is less than the current step 72001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 72000 that is less than the current step 72001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 72000 that is less than the current step 72001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 72500 Train Epoch: 15 [500/4800 (10%)]	Loss: 9.929971
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.08s
+ETA: 9.59h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 73000 Train Epoch: 15 [1000/4800 (21%)]	Loss: 9.794811
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.33h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 73500 Train Epoch: 15 [1500/4800 (31%)]	Loss: 9.807253
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.11h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 74000 Train Epoch: 15 [2000/4800 (42%)]	Loss: 9.321879
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.06h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 74500 Train Epoch: 15 [2500/4800 (52%)]	Loss: 8.997618
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.01h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 75000 Train Epoch: 15 [3000/4800 (62%)]	Loss: 9.694875
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.04h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 75500 Train Epoch: 15 [3500/4800 (73%)]	Loss: 8.979211
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.03h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 76000 Train Epoch: 15 [4000/4800 (83%)]	Loss: 9.390771
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.03h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 76500 Train Epoch: 15 [4500/4800 (94%)]	Loss: 9.382803
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.02h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep15.pth!
+Running Testing
+Eval time for batch:  2.722020149230957
+mse: 0.013163780713512097
+val 76800: logging videos
+
+Test set: Average loss: 12.4547 in 3.41s
+
+starting epoch  16
+train 76800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 76800 Train Epoch: 16 [0/4800 (0%)]	Loss: 9.687030
+avg time for loading: 0.68s, logs: 0.18s, compute: 0.13s, total: 0.99s
+ETA: 111.21h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 76800 that is less than the current step 76802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 77000 Train Epoch: 16 [200/4800 (4%)]	Loss: 9.439369
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.53h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 77500 Train Epoch: 16 [700/4800 (15%)]	Loss: 9.880789
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.60h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 78000 Train Epoch: 16 [1200/4800 (25%)]	Loss: 9.627645
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.46h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 78500 Train Epoch: 16 [1700/4800 (35%)]	Loss: 9.632575
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.41h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 79000 Train Epoch: 16 [2200/4800 (46%)]	Loss: 8.977102
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.35h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 79500 Train Epoch: 16 [2700/4800 (56%)]	Loss: 9.668082
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.23h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 80000 Train Epoch: 16 [3200/4800 (67%)]	Loss: 9.530263
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.20h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 80500 Train Epoch: 16 [3700/4800 (77%)]	Loss: 9.566051
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.17h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 81000 Train Epoch: 16 [4200/4800 (88%)]	Loss: 9.179068
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.13h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 81500 Train Epoch: 16 [4700/4800 (98%)]	Loss: 9.271867
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.10h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep16.pth!
+starting epoch  17
+train 81600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 81600 Train Epoch: 17 [0/4800 (0%)]	Loss: 9.570419
+avg time for loading: 0.71s, logs: 0.18s, compute: 0.15s, total: 1.04s
+ETA: 115.38h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 81600 that is less than the current step 81601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 81600 that is less than the current step 81601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 81600 that is less than the current step 81601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 81600 that is less than the current step 81601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 82000 Train Epoch: 17 [400/4800 (8%)]	Loss: 8.757339
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.54h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 82500 Train Epoch: 17 [900/4800 (19%)]	Loss: 9.524219
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.24h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 83000 Train Epoch: 17 [1400/4800 (29%)]	Loss: 9.306736
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.10h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 83500 Train Epoch: 17 [1900/4800 (40%)]	Loss: 9.641254
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.19h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 84000 Train Epoch: 17 [2400/4800 (50%)]	Loss: 9.709007
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.32h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 84500 Train Epoch: 17 [2900/4800 (60%)]	Loss: 9.749928
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 85000 Train Epoch: 17 [3400/4800 (71%)]	Loss: 9.912847
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.30h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 85500 Train Epoch: 17 [3900/4800 (81%)]	Loss: 9.626945
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.18h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 86000 Train Epoch: 17 [4400/4800 (92%)]	Loss: 9.164255
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 9.11h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep17.pth!
+starting epoch  18
+train 86400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 86400 Train Epoch: 18 [0/4800 (0%)]	Loss: 9.085062
+avg time for loading: 0.69s, logs: 0.18s, compute: 0.16s, total: 1.03s
+ETA: 112.33h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 86400 that is less than the current step 86401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 86400 that is less than the current step 86401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 86400 that is less than the current step 86401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 86400 that is less than the current step 86401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 86500 Train Epoch: 18 [100/4800 (2%)]	Loss: 9.039701
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.07s, total: 0.10s
+ETA: 10.75h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 87000 Train Epoch: 18 [600/4800 (12%)]	Loss: 9.677155
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.80h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 87500 Train Epoch: 18 [1100/4800 (23%)]	Loss: 9.724052
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.57h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 88000 Train Epoch: 18 [1600/4800 (33%)]	Loss: 9.722198
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.41h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 88500 Train Epoch: 18 [2100/4800 (44%)]	Loss: 10.387053
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 89000 Train Epoch: 18 [2600/4800 (54%)]	Loss: 9.708698
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.60h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 89500 Train Epoch: 18 [3100/4800 (65%)]	Loss: 10.093985
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.74h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 90000 Train Epoch: 18 [3600/4800 (75%)]	Loss: 9.810504
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.79h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 90500 Train Epoch: 18 [4100/4800 (85%)]	Loss: 9.794411
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 91000 Train Epoch: 18 [4600/4800 (96%)]	Loss: 9.569090
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.82h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep18.pth!
+starting epoch  19
+train 91200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 91200 Train Epoch: 19 [0/4800 (0%)]	Loss: 9.168616
+avg time for loading: 0.85s, logs: 0.20s, compute: 0.14s, total: 1.19s
+ETA: 128.16h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 91200 that is less than the current step 91201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 91200 that is less than the current step 91201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 91200 that is less than the current step 91201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 91200 that is less than the current step 91201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 91500 Train Epoch: 19 [300/4800 (6%)]	Loss: 9.587104
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.29h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 92000 Train Epoch: 19 [800/4800 (17%)]	Loss: 10.390655
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.64h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 92500 Train Epoch: 19 [1300/4800 (27%)]	Loss: 9.977547
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 93000 Train Epoch: 19 [1800/4800 (38%)]	Loss: 9.697830
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 93500 Train Epoch: 19 [2300/4800 (48%)]	Loss: 10.059906
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.52h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 94000 Train Epoch: 19 [2800/4800 (58%)]	Loss: 9.816184
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.53h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 94500 Train Epoch: 19 [3300/4800 (69%)]	Loss: 9.858265
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 95000 Train Epoch: 19 [3800/4800 (79%)]	Loss: 9.725795
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.73h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 95500 Train Epoch: 19 [4300/4800 (90%)]	Loss: 9.212478
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.74h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep19.pth!
+starting epoch  20
+train 96000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 96000 Train Epoch: 20 [0/4800 (0%)]	Loss: 9.630892
+avg time for loading: 0.78s, logs: 0.19s, compute: 0.14s, total: 1.11s
+ETA: 118.45h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 96000 that is less than the current step 96001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 96000 that is less than the current step 96001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 96000 that is less than the current step 96001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 96000 that is less than the current step 96001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 96500 Train Epoch: 20 [500/4800 (10%)]	Loss: 9.805678
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.61h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 97000 Train Epoch: 20 [1000/4800 (21%)]	Loss: 9.749274
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.40h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 97500 Train Epoch: 20 [1500/4800 (31%)]	Loss: 9.351697
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 8.28h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 98000 Train Epoch: 20 [2000/4800 (42%)]	Loss: 9.535773
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 8.29h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 98500 Train Epoch: 20 [2500/4800 (52%)]	Loss: 10.196771
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 8.24h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 99000 Train Epoch: 20 [3000/4800 (62%)]	Loss: 9.740120
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.22h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 99500 Train Epoch: 20 [3500/4800 (73%)]	Loss: 9.627729
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 8.23h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 100000 Train Epoch: 20 [4000/4800 (83%)]	Loss: 10.022147
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.05s, total: 0.08s
+ETA: 8.27h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 100500 Train Epoch: 20 [4500/4800 (94%)]	Loss: 9.339702
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.38h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep20.pth!
+Running Testing
+Eval time for batch:  2.711289405822754
+mse: 0.010246967200146173
+val 100800: logging videos
+
+Test set: Average loss: 11.9865 in 3.38s
+
+starting epoch  21
+train 100800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 100800 Train Epoch: 21 [0/4800 (0%)]	Loss: 9.443533
+avg time for loading: 0.67s, logs: 0.19s, compute: 0.25s, total: 1.12s
+ETA: 117.63h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 100800 that is less than the current step 100802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 101000 Train Epoch: 21 [200/4800 (4%)]	Loss: 9.247724
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.55h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 101500 Train Epoch: 21 [700/4800 (15%)]	Loss: 9.559413
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.91h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 102000 Train Epoch: 21 [1200/4800 (25%)]	Loss: 9.708664
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 102500 Train Epoch: 21 [1700/4800 (35%)]	Loss: 9.909501
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.79h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 103000 Train Epoch: 21 [2200/4800 (46%)]	Loss: 9.673562
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.93h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 103500 Train Epoch: 21 [2700/4800 (56%)]	Loss: 10.317646
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.00h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 104000 Train Epoch: 21 [3200/4800 (67%)]	Loss: 9.418740
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.03h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 104500 Train Epoch: 21 [3700/4800 (77%)]	Loss: 9.486897
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 9.05h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 105000 Train Epoch: 21 [4200/4800 (88%)]	Loss: 10.135519
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.97h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 105500 Train Epoch: 21 [4700/4800 (98%)]	Loss: 10.143953
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.96h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep21.pth!
+starting epoch  22
+train 105600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 105600 Train Epoch: 22 [0/4800 (0%)]	Loss: 10.117712
+avg time for loading: 0.86s, logs: 0.24s, compute: 0.16s, total: 1.26s
+ETA: 131.53h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 105600 that is less than the current step 105601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 105600 that is less than the current step 105601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 105600 that is less than the current step 105601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 105600 that is less than the current step 105601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 106000 Train Epoch: 22 [400/4800 (8%)]	Loss: 9.504896
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.08h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 106500 Train Epoch: 22 [900/4800 (19%)]	Loss: 9.646914
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.88h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 107000 Train Epoch: 22 [1400/4800 (29%)]	Loss: 9.940981
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.69h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 107500 Train Epoch: 22 [1900/4800 (40%)]	Loss: 9.930437
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.65h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 108000 Train Epoch: 22 [2400/4800 (50%)]	Loss: 9.455819
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.60h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 108500 Train Epoch: 22 [2900/4800 (60%)]	Loss: 9.813992
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.56h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 109000 Train Epoch: 22 [3400/4800 (71%)]	Loss: 9.827298
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.56h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 109500 Train Epoch: 22 [3900/4800 (81%)]	Loss: 9.879636
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 110000 Train Epoch: 22 [4400/4800 (92%)]	Loss: 10.058244
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.51h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep22.pth!
+starting epoch  23
+train 110400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 110400 Train Epoch: 23 [0/4800 (0%)]	Loss: 9.705355
+avg time for loading: 0.82s, logs: 0.26s, compute: 0.16s, total: 1.23s
+ETA: 126.54h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 110400 that is less than the current step 110401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 110400 that is less than the current step 110401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 110400 that is less than the current step 110401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 110400 that is less than the current step 110401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 110500 Train Epoch: 23 [100/4800 (2%)]	Loss: 9.823821
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.07s, total: 0.10s
+ETA: 10.04h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 111000 Train Epoch: 23 [600/4800 (12%)]	Loss: 9.364181
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.62h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 111500 Train Epoch: 23 [1100/4800 (23%)]	Loss: 9.905141
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.48h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 112000 Train Epoch: 23 [1600/4800 (33%)]	Loss: 10.000231
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 112500 Train Epoch: 23 [2100/4800 (44%)]	Loss: 9.813387
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 113000 Train Epoch: 23 [2600/4800 (54%)]	Loss: 9.302120
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.35h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 113500 Train Epoch: 23 [3100/4800 (65%)]	Loss: 10.091759
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 114000 Train Epoch: 23 [3600/4800 (75%)]	Loss: 9.665753
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 114500 Train Epoch: 23 [4100/4800 (85%)]	Loss: 10.317047
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.18h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 115000 Train Epoch: 23 [4600/4800 (96%)]	Loss: 9.775450
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.12h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep23.pth!
+starting epoch  24
+train 115200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 115200 Train Epoch: 24 [0/4800 (0%)]	Loss: 9.929074
+avg time for loading: 0.90s, logs: 0.28s, compute: 0.21s, total: 1.39s
+ETA: 140.87h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 115200 that is less than the current step 115201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 115200 that is less than the current step 115201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 115200 that is less than the current step 115201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 115200 that is less than the current step 115201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 115500 Train Epoch: 24 [300/4800 (6%)]	Loss: 9.754147
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.48h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 116000 Train Epoch: 24 [800/4800 (17%)]	Loss: 9.854318
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.07h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 116500 Train Epoch: 24 [1300/4800 (27%)]	Loss: 9.878621
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.03h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 117000 Train Epoch: 24 [1800/4800 (38%)]	Loss: 10.527075
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.96h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 117500 Train Epoch: 24 [2300/4800 (48%)]	Loss: 10.064939
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.85h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 118000 Train Epoch: 24 [2800/4800 (58%)]	Loss: 9.851782
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 118500 Train Epoch: 24 [3300/4800 (69%)]	Loss: 9.884645
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.81h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 119000 Train Epoch: 24 [3800/4800 (79%)]	Loss: 9.985551
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.77h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 119500 Train Epoch: 24 [4300/4800 (90%)]	Loss: 9.858990
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.73h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep24.pth!
+starting epoch  25
+train 120000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 120000 Train Epoch: 25 [0/4800 (0%)]	Loss: 9.945628
+avg time for loading: 1.05s, logs: 0.25s, compute: 0.22s, total: 1.52s
+ETA: 152.09h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 120000 that is less than the current step 120001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 120000 that is less than the current step 120001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 120000 that is less than the current step 120001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 120000 that is less than the current step 120001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 120500 Train Epoch: 25 [500/4800 (10%)]	Loss: 9.567460
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 11.23h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 121000 Train Epoch: 25 [1000/4800 (21%)]	Loss: 9.858773
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.95h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 121500 Train Epoch: 25 [1500/4800 (31%)]	Loss: 10.234254
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.48h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 122000 Train Epoch: 25 [2000/4800 (42%)]	Loss: 9.821278
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.24h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 122500 Train Epoch: 25 [2500/4800 (52%)]	Loss: 10.268137
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.07h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 123000 Train Epoch: 25 [3000/4800 (62%)]	Loss: 10.133557
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.91h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 123500 Train Epoch: 25 [3500/4800 (73%)]	Loss: 10.052995
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.86h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 124000 Train Epoch: 25 [4000/4800 (83%)]	Loss: 10.288417
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.78h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 124500 Train Epoch: 25 [4500/4800 (94%)]	Loss: 10.114278
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.71h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep25.pth!
+Running Testing
+Eval time for batch:  2.9068350791931152
+mse: 0.009884847915600403
+val 124800: logging videos
+
+Test set: Average loss: 12.4689 in 3.76s
+
+starting epoch  26
+train 124800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 124800 Train Epoch: 26 [0/4800 (0%)]	Loss: 10.010563
+avg time for loading: 0.73s, logs: 0.94s, compute: 0.14s, total: 1.80s
+ETA: 177.92h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 124800 that is less than the current step 124802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 125000 Train Epoch: 26 [200/4800 (4%)]	Loss: 9.878390
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 9.14h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 125500 Train Epoch: 26 [700/4800 (15%)]	Loss: 10.398786
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 126000 Train Epoch: 26 [1200/4800 (25%)]	Loss: 9.574205
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.36h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 126500 Train Epoch: 26 [1700/4800 (35%)]	Loss: 9.980735
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 127000 Train Epoch: 26 [2200/4800 (46%)]	Loss: 10.216701
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.16h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 127500 Train Epoch: 26 [2700/4800 (56%)]	Loss: 9.443369
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.39h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 128000 Train Epoch: 26 [3200/4800 (67%)]	Loss: 10.168509
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 8.37h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 128500 Train Epoch: 26 [3700/4800 (77%)]	Loss: 10.331952
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.12s
+ETA: 11.67h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 129000 Train Epoch: 26 [4200/4800 (88%)]	Loss: 10.050590
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.75s, total: 0.78s
+ETA: 76.63h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 129500 Train Epoch: 26 [4700/4800 (98%)]	Loss: 10.059289
+avg time for loading: 0.03s, logs: 0.00s, compute: 0.68s, total: 0.70s
+ETA: 69.50h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep26.pth!
+starting epoch  27
+train 129600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 129600 Train Epoch: 27 [0/4800 (0%)]	Loss: 9.841378
+avg time for loading: 0.87s, logs: 0.30s, compute: 0.24s, total: 1.40s
+ETA: 136.70h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 129600 that is less than the current step 129601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 129600 that is less than the current step 129601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 129600 that is less than the current step 129601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 129600 that is less than the current step 129601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 130000 Train Epoch: 27 [400/4800 (8%)]	Loss: 9.965269
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 10.52h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 130500 Train Epoch: 27 [900/4800 (19%)]	Loss: 9.689652
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.09s
+ETA: 9.22h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 131000 Train Epoch: 27 [1400/4800 (29%)]	Loss: 10.689996
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.97h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 131500 Train Epoch: 27 [1900/4800 (40%)]	Loss: 9.812854
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.79h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 132000 Train Epoch: 27 [2400/4800 (50%)]	Loss: 9.427443
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.69h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 132500 Train Epoch: 27 [2900/4800 (60%)]	Loss: 9.748296
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.63h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 133000 Train Epoch: 27 [3400/4800 (71%)]	Loss: 10.084897
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 133500 Train Epoch: 27 [3900/4800 (81%)]	Loss: 9.925072
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.55h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 134000 Train Epoch: 27 [4400/4800 (92%)]	Loss: 10.583385
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.50h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep27.pth!
+starting epoch  28
+train 134400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 134400 Train Epoch: 28 [0/4800 (0%)]	Loss: 10.221245
+avg time for loading: 0.69s, logs: 0.18s, compute: 0.15s, total: 1.03s
+ETA: 98.90h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 134400 that is less than the current step 134401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 134400 that is less than the current step 134401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 134400 that is less than the current step 134401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 134400 that is less than the current step 134401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 134500 Train Epoch: 28 [100/4800 (2%)]	Loss: 10.372446
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.10s
+ETA: 9.14h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 135000 Train Epoch: 28 [600/4800 (12%)]	Loss: 10.198050
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.32h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 135500 Train Epoch: 28 [1100/4800 (23%)]	Loss: 9.691395
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 136000 Train Epoch: 28 [1600/4800 (33%)]	Loss: 9.463121
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 136500 Train Epoch: 28 [2100/4800 (44%)]	Loss: 9.939470
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.30h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 137000 Train Epoch: 28 [2600/4800 (54%)]	Loss: 9.966681
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.34h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 137500 Train Epoch: 28 [3100/4800 (65%)]	Loss: 9.761175
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 138000 Train Epoch: 28 [3600/4800 (75%)]	Loss: 10.310127
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.48h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 138500 Train Epoch: 28 [4100/4800 (85%)]	Loss: 9.962150
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.58h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 139000 Train Epoch: 28 [4600/4800 (96%)]	Loss: 9.980118
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.57h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep28.pth!
+starting epoch  29
+train 139200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 139200 Train Epoch: 29 [0/4800 (0%)]	Loss: 9.819735
+avg time for loading: 2.43s, logs: 0.25s, compute: 0.23s, total: 2.91s
+ETA: 275.71h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 139200 that is less than the current step 139201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 139200 that is less than the current step 139201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 139200 that is less than the current step 139201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 139200 that is less than the current step 139201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 139500 Train Epoch: 29 [300/4800 (6%)]	Loss: 10.069273
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.10s, total: 0.13s
+ETA: 11.99h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 140000 Train Epoch: 29 [800/4800 (17%)]	Loss: 9.880801
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 10.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 140500 Train Epoch: 29 [1300/4800 (27%)]	Loss: 9.637271
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 10.16h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 141000 Train Epoch: 29 [1800/4800 (38%)]	Loss: 9.841471
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.80h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 141500 Train Epoch: 29 [2300/4800 (48%)]	Loss: 9.994057
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.53h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 142000 Train Epoch: 29 [2800/4800 (58%)]	Loss: 10.235815
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 142500 Train Epoch: 29 [3300/4800 (69%)]	Loss: 9.987535
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.29h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 143000 Train Epoch: 29 [3800/4800 (79%)]	Loss: 10.309666
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 143500 Train Epoch: 29 [4300/4800 (90%)]	Loss: 10.208845
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.17h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep29.pth!
+starting epoch  30
+train 144000: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 144000 Train Epoch: 30 [0/4800 (0%)]	Loss: 10.008080
+avg time for loading: 0.98s, logs: 0.24s, compute: 0.20s, total: 1.42s
+ETA: 132.62h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 144000 that is less than the current step 144001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 144000 that is less than the current step 144001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 144000 that is less than the current step 144001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 144000 that is less than the current step 144001. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 144500 Train Epoch: 30 [500/4800 (10%)]	Loss: 10.106133
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.85h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 145000 Train Epoch: 30 [1000/4800 (21%)]	Loss: 9.602098
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.47h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 145500 Train Epoch: 30 [1500/4800 (31%)]	Loss: 10.336407
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.35h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 146000 Train Epoch: 30 [2000/4800 (42%)]	Loss: 9.887080
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.22h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 146500 Train Epoch: 30 [2500/4800 (52%)]	Loss: 10.089974
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.24h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 147000 Train Epoch: 30 [3000/4800 (62%)]	Loss: 9.859683
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.21h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 147500 Train Epoch: 30 [3500/4800 (73%)]	Loss: 10.114374
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.17h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 148000 Train Epoch: 30 [4000/4800 (83%)]	Loss: 10.067323
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.11h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 148500 Train Epoch: 30 [4500/4800 (94%)]	Loss: 10.656054
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 8.08h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep30.pth!
+Running Testing
+Eval time for batch:  2.066939115524292
+mse: 0.008377756152185611
+val 148800: logging videos
+
+Test set: Average loss: 12.8820 in 2.90s
+
+starting epoch  31
+train 148800: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 148800 Train Epoch: 31 [0/4800 (0%)]	Loss: 9.534777
+avg time for loading: 0.78s, logs: 0.21s, compute: 0.14s, total: 1.12s
+ETA: 103.43h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148801. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 148800 that is less than the current step 148802. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 149000 Train Epoch: 31 [200/4800 (4%)]	Loss: 10.435879
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.41h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 149500 Train Epoch: 31 [700/4800 (15%)]	Loss: 10.194263
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.71h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 150000 Train Epoch: 31 [1200/4800 (25%)]	Loss: 9.762931
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.55h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 150500 Train Epoch: 31 [1700/4800 (35%)]	Loss: 10.548971
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 151000 Train Epoch: 31 [2200/4800 (46%)]	Loss: 10.141150
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.51h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 151500 Train Epoch: 31 [2700/4800 (56%)]	Loss: 9.970942
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.50h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 152000 Train Epoch: 31 [3200/4800 (67%)]	Loss: 10.154671
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 152500 Train Epoch: 31 [3700/4800 (77%)]	Loss: 9.876650
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.48h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 153000 Train Epoch: 31 [4200/4800 (88%)]	Loss: 10.607442
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 153500 Train Epoch: 31 [4700/4800 (98%)]	Loss: 10.166339
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.50h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep31.pth!
+starting epoch  32
+train 153600: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 153600 Train Epoch: 32 [0/4800 (0%)]	Loss: 9.791886
+avg time for loading: 0.96s, logs: 0.22s, compute: 0.15s, total: 1.33s
+ETA: 120.19h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 153600 that is less than the current step 153601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 153600 that is less than the current step 153601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 153600 that is less than the current step 153601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 153600 that is less than the current step 153601. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 154000 Train Epoch: 32 [400/4800 (8%)]	Loss: 10.107177
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 7.85h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 154500 Train Epoch: 32 [900/4800 (19%)]	Loss: 9.826134
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.62h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 155000 Train Epoch: 32 [1400/4800 (29%)]	Loss: 9.581932
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.63h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 155500 Train Epoch: 32 [1900/4800 (40%)]	Loss: 10.063103
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.57h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 156000 Train Epoch: 32 [2400/4800 (50%)]	Loss: 10.126667
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.49h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 156500 Train Epoch: 32 [2900/4800 (60%)]	Loss: 10.424972
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.46h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 157000 Train Epoch: 32 [3400/4800 (71%)]	Loss: 10.143240
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.44h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 157500 Train Epoch: 32 [3900/4800 (81%)]	Loss: 10.623620
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.41h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 158000 Train Epoch: 32 [4400/4800 (92%)]	Loss: 10.098241
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.43h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep32.pth!
+starting epoch  33
+train 158400: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 158400 Train Epoch: 33 [0/4800 (0%)]	Loss: 10.028619
+avg time for loading: 0.81s, logs: 0.24s, compute: 0.14s, total: 1.18s
+ETA: 105.68h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 158400 that is less than the current step 158401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 158400 that is less than the current step 158401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 158400 that is less than the current step 158401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 158400 that is less than the current step 158401. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 158500 Train Epoch: 33 [100/4800 (2%)]	Loss: 10.393352
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 159000 Train Epoch: 33 [600/4800 (12%)]	Loss: 10.444505
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.09s
+ETA: 7.60h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 159500 Train Epoch: 33 [1100/4800 (23%)]	Loss: 10.247016
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.38h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 160000 Train Epoch: 33 [1600/4800 (33%)]	Loss: 10.270266
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.32h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 160500 Train Epoch: 33 [2100/4800 (44%)]	Loss: 9.876491
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.28h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 161000 Train Epoch: 33 [2600/4800 (54%)]	Loss: 9.943343
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 161500 Train Epoch: 33 [3100/4800 (65%)]	Loss: 10.353811
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 162000 Train Epoch: 33 [3600/4800 (75%)]	Loss: 10.550110
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.25h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 162500 Train Epoch: 33 [4100/4800 (85%)]	Loss: 10.484305
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.27h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 163000 Train Epoch: 33 [4600/4800 (96%)]	Loss: 10.154924
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.06s, total: 0.08s
+ETA: 7.38h
+Saved checkpoint to ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep33.pth!
+starting epoch  34
+train 163200: logging videos
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 163200 Train Epoch: 34 [0/4800 (0%)]	Loss: 10.342934
+avg time for loading: 1.63s, logs: 0.34s, compute: 0.28s, total: 2.25s
+ETA: 197.76h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 163200 that is less than the current step 163201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 163200 that is less than the current step 163201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 163200 that is less than the current step 163201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 163200 that is less than the current step 163201. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 163500 Train Epoch: 34 [300/4800 (6%)]	Loss: 9.915413
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.09s, total: 0.11s
+ETA: 9.93h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 164000 Train Epoch: 34 [800/4800 (17%)]	Loss: 9.996667
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 9.08h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 164500 Train Epoch: 34 [1300/4800 (27%)]	Loss: 9.884353
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.08s, total: 0.10s
+ETA: 8.75h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 165000 Train Epoch: 34 [1800/4800 (38%)]	Loss: 10.283644
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.33h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 165500 Train Epoch: 34 [2300/4800 (48%)]	Loss: 10.512731
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.07s, total: 0.09s
+ETA: 8.33h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 166000 Train Epoch: 34 [2800/4800 (58%)]	Loss: 10.168158
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.28s, total: 0.29s
+ETA: 25.83h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 166500 Train Epoch: 34 [3300/4800 (69%)]	Loss: 10.455417
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.24s, total: 0.26s
+ETA: 23.14h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 167000 Train Epoch: 34 [3800/4800 (79%)]	Loss: 10.337935
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.22s, total: 0.24s
+ETA: 21.03h
+GPU none: ./experiments/skill_prior_learning/kitchen/hierarchical_cl
+itr: 167500 Train Epoch: 34 [4300/4800 (90%)]	Loss: 10.235907
+avg time for loading: 0.02s, logs: 0.00s, compute: 0.28s, total: 0.30s
+ETA: 26.71h

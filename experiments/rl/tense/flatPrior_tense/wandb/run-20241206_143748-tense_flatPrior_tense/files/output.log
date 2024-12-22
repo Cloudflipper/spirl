@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "spirl/rl/train.py", line 327, in <module>
+    RLTrainer(args=get_args())
+  File "spirl/rl/train.py", line 56, in __init__
+    self.env = self._hp.environment(self.conf.env)
+  File "/home/zzz/spirl-master/tensegrity_env/tensegrity_env/envs/tensegrity_env.py", line 243, in __init__
+    MujocoEnv.__init__(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/mujoco/mujoco_env.py", line 47, in __init__
+    self.model = mujoco_py.load_model_from_path(fullpath)
+  File "cymj.pyx", line 175, in mujoco_py.cymj.load_model_from_path
+Exception: Failed to load XML file: /home/zzz/spirl-master/tensegrity_env/3prism_jonathan_steady_side.xml. mj_loadXML error: b"XML Error: invalid keyword: 'implicitfast'\nElement 'option', line 13, column 5\n"

@@ -1,0 +1,25 @@
+{"time":"2024-11-29T16:30:40.088603967-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-29T16:30:40.088657825-05:00","level":"INFO","msg":"created symlink","path":"experiments/skill_prior_learning/tense/wandb/run-20241129_163040-tense/logs/debug-core.log"}
+{"time":"2024-11-29T16:30:40.70612658-05:00","level":"INFO","msg":"created new stream","id":"tense"}
+{"time":"2024-11-29T16:30:40.70617476-05:00","level":"INFO","msg":"stream: started","id":"tense"}
+{"time":"2024-11-29T16:30:40.706242156-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T16:30:40.710823384-05:00","level":"INFO","msg":"sender: started","stream_id":"tense"}
+{"time":"2024-11-29T16:30:40.710823443-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T16:30:41.248722545-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-29T16:30:42.317109184-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:42.317621517-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:42.820634724-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:42.820750578-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:42.826890574-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:42.826958701-05:00","level":"WARN","msg":"handler: ignoring partial history record","step":0,"current":951}
+{"time":"2024-11-29T16:30:44.113388617-05:00","level":"INFO","msg":"stream: closing","id":"tense"}
+{"time":"2024-11-29T16:30:44.113499067-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-29T16:30:44.114825477-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-29T16:30:44.210442434-05:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-29T16:30:44.210474964-05:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-29T16:30:44.210478918-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-29T16:30:44.696965013-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-29T16:30:44.936065817-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T16:30:44.936098814-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T16:30:44.936160809-05:00","level":"INFO","msg":"sender: closed","stream_id":"tense"}
+{"time":"2024-11-29T16:30:44.936169945-05:00","level":"INFO","msg":"stream: closed","id":"tense"}

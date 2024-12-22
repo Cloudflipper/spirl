@@ -1,0 +1,19 @@
+{"time":"2024-11-28T23:46:00.947844884-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-28T23:46:00.947893444-05:00","level":"INFO","msg":"created symlink","path":"experiments/skill_prior_learning/kitchen/flat/wandb/run-20241128_234600-flat/logs/debug-core.log"}
+{"time":"2024-11-28T23:46:01.636675653-05:00","level":"INFO","msg":"created new stream","id":"flat"}
+{"time":"2024-11-28T23:46:01.636729447-05:00","level":"INFO","msg":"stream: started","id":"flat"}
+{"time":"2024-11-28T23:46:01.636979341-05:00","level":"INFO","msg":"sender: started","stream_id":"flat"}
+{"time":"2024-11-28T23:46:01.637022169-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T23:46:01.636971037-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T23:46:01.996537326-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-28T23:46:04.42395168-05:00","level":"INFO","msg":"stream: closing","id":"flat"}
+{"time":"2024-11-28T23:46:04.424002825-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-28T23:46:04.424692582-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-28T23:46:04.483806784-05:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-28T23:46:04.483844598-05:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-28T23:46:04.483849335-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-28T23:46:04.788870284-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-28T23:46:05.060505004-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T23:46:05.060538999-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T23:46:05.060637263-05:00","level":"INFO","msg":"sender: closed","stream_id":"flat"}
+{"time":"2024-11-28T23:46:05.060666156-05:00","level":"INFO","msg":"stream: closed","id":"flat"}

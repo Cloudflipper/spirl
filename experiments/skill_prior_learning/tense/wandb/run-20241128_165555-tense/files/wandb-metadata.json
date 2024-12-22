@@ -1,0 +1,17 @@
+{
+  "os":  "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.17",
+  "python":  "3.8.20",
+  "startedAt":  "2024-11-28T21:55:55.479188Z",
+  "args":  [
+    "--path=spirl/configs/skill_prior_learning/tense",
+    "--val_data_size=160"
+  ],
+  "program":  "spirl/train.py",
+  "codePath":  "spirl/train.py",
+  "email":  "cldflpr@umich.edu",
+  "root":  "./experiments/skill_prior_learning/tense",
+  "host":  "lmr",
+  "username":  "zzz",
+  "executable":  "/home/zzz/miniconda3/envs/mujoco/bin/python3",
+  "codePathLocal":  "spirl/train.py"
+}

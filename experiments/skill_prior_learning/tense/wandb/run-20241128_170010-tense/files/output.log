@@ -1,0 +1,19 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 392
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len val dataset 80
+Running Testing
+Traceback (most recent call last):
+  File "spirl/train.py", line 402, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 79, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 110, in train
+    self.val()
+  File "spirl/train.py", line 209, in val
+    self.model_test.log_outputs(output, inputs, losses_meter.avg, self.global_step,
+UnboundLocalError: local variable 'output' referenced before assignment

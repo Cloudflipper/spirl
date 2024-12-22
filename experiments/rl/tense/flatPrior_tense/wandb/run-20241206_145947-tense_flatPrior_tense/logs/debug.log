@@ -1,0 +1,27 @@
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Configure stats pid to 32138
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Loading settings from /home/zzz/.config/wandb/settings
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Loading settings from /home/zzz/spirl-master/wandb/settings
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'spirl/rl/train.py', 'program_abspath': '/home/zzz/spirl-master/spirl/rl/train.py', 'program': 'spirl/rl/train.py'}
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:_log_setup():534] Logging user logs to ./experiments/rl/tense/flatPrior_tense/wandb/run-20241206_145947-tense_flatPrior_tense/logs/debug.log
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:_log_setup():535] Logging internal logs to ./experiments/rl/tense/flatPrior_tense/wandb/run-20241206_145947-tense_flatPrior_tense/logs/debug-internal.log
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:init():621] calling init triggers
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {'exp_dir': './experiments', 'conf_path': 'spirl/configs/rl/tense/conf.py', 'general_seed': 42, 'general_data_dir': '.', 'general_num_epochs': 100, 'general_max_rollout_len': 280, 'general_n_steps_per_epoch': 50000, 'general_n_warmup_steps': 5000.0, 'agent_policy_params_action_dim': 6, 'agent_policy_params_input_dim': 39, 'agent_policy_params_n_layers': 5, 'agent_policy_params_nz_mid': 256, 'agent_policy_params_max_action_range': 1.0, 'agent_policy_params_prior_model_params_state_dim': 39, 'agent_policy_params_prior_model_params_action_dim': 6, 'agent_policy_params_prior_model_checkpoint': './experiments/skill_prior_learning/tense', 'agent_critic_params_action_dim': 6, 'agent_critic_params_input_dim': 39, 'agent_critic_params_output_dim': 1, 'agent_critic_params_n_layers': 2, 'agent_critic_params_nz_mid': 256, 'agent_critic_params_action_input': True, 'agent_replay_params_capacity': 100000.0, 'agent_replay_params_dump_replay': False, 'agent_clip_q_target': False, 'agent_batch_size': 256, 'agent_log_video_caption': True, 'agent_td_schedule_params_p': 1.0, 'agent_device': device(type='cpu'), 'data_dataset_spec_n_actions': 6, 'data_dataset_spec_state_dim': 39, 'data_dataset_spec_env_name': 'tensegrity_env-v0', 'data_dataset_spec_res': 128, 'data_dataset_spec_crop_rand_subseq': True, 'data_dataset_spec_max_seq_len': 280, 'env_reward_norm': 1.0, 'env_device': device(type='cpu'), 'ckpt_path': None, 'notes': 'non-hierarchical RL experiments in tensegrity env', 'mpi_rank': 0, 'mpi_is_chef': True, 'mpi_num_workers': 1}
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:init():671] starting backend
+2024-12-06 14:59:47,243 INFO    MainThread:32138 [wandb_init.py:init():675] sending inform_init request
+2024-12-06 14:59:47,247 INFO    MainThread:32138 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-06 14:59:47,248 INFO    MainThread:32138 [wandb_init.py:init():688] backend started and connected
+2024-12-06 14:59:47,261 INFO    MainThread:32138 [wandb_init.py:init():783] updated telemetry
+2024-12-06 14:59:47,261 INFO    MainThread:32138 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-12-06 14:59:48,520 INFO    MainThread:32138 [wandb_init.py:init():859] run resumed
+2024-12-06 14:59:48,535 INFO    MainThread:32138 [wandb_init.py:init():867] starting run threads in backend
+2024-12-06 14:59:48,666 INFO    MainThread:32138 [wandb_run.py:_console_start():2463] atexit reg
+2024-12-06 14:59:48,666 INFO    MainThread:32138 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-12-06 14:59:48,667 INFO    MainThread:32138 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-12-06 14:59:48,667 INFO    MainThread:32138 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-12-06 14:59:48,669 INFO    MainThread:32138 [wandb_init.py:init():911] run started, returning control to user process
+2024-12-06 14:59:50,105 WARNING MsgRouterThr:32138 [router.py:message_loop():77] message_loop has been closed

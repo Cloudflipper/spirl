@@ -1,0 +1,20 @@
+{"time":"2024-11-07T15:00:47.994643755-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-07T15:00:47.994652633-05:00","level":"INFO","msg":"created symlink","path":"experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0/wandb/run-20241107_150047-spirl_cl_SPIRL_kitchen_seed0/logs/debug-core.log"}
+{"time":"2024-11-07T15:00:48.171697178-05:00","level":"INFO","msg":"created new stream","id":"spirl_cl_SPIRL_kitchen_seed0"}
+{"time":"2024-11-07T15:00:48.17173365-05:00","level":"INFO","msg":"stream: started","id":"spirl_cl_SPIRL_kitchen_seed0"}
+{"time":"2024-11-07T15:00:48.171816487-05:00","level":"INFO","msg":"sender: started","stream_id":"spirl_cl_SPIRL_kitchen_seed0"}
+{"time":"2024-11-07T15:00:48.171797665-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"spirl_cl_SPIRL_kitchen_seed0"}}
+{"time":"2024-11-07T15:00:48.171773442-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"spirl_cl_SPIRL_kitchen_seed0"}}
+{"time":"2024-11-07T15:00:48.299872604-05:00","level":"ERROR","msg":"HTTP error","status":400,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-11-07T15:00:48.299941246-05:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 400 Bad Request: {\"errors\":[{\"message\":\"you may not log runs directly to your organization, please try using your team entity\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2024-11-07T15:00:48.305589199-05:00","level":"INFO","msg":"stream: closing","id":"spirl_cl_SPIRL_kitchen_seed0"}
+{"time":"2024-11-07T15:00:48.305834465-05:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2024-11-07T15:00:48.306811626-05:00","level":"WARN","msg":"No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job"}
+{"time":"2024-11-07T15:00:48.306819916-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-07T15:00:48.40558304-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-11-07T15:00:48.405623272-05:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project cldflpr-university-of-michigan-org/spirl not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2024-11-07T15:00:48.405894754-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T15:00:48.40593839-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"spirl_cl_SPIRL_kitchen_seed0"}}
+{"time":"2024-11-07T15:00:48.405946132-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"spirl_cl_SPIRL_kitchen_seed0"}}
+{"time":"2024-11-07T15:00:48.405980056-05:00","level":"INFO","msg":"sender: closed","stream_id":"spirl_cl_SPIRL_kitchen_seed0"}
+{"time":"2024-11-07T15:00:48.405983167-05:00","level":"INFO","msg":"stream: closed","id":"spirl_cl_SPIRL_kitchen_seed0"}

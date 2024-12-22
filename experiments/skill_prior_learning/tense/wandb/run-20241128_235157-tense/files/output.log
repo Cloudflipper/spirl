@@ -1,0 +1,19 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 392
+Traceback (most recent call last):
+  File "spirl/train.py", line 405, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 58, in __init__
+    self.logger, self.model, self.train_loader = self.build_phase(train_params, 'train')
+  File "spirl/train.py", line 307, in build_phase
+    loader = self.get_dataset(self.args, model, self.conf.data, phase, params.n_repeat, params.dataset_size)
+  File "spirl/train.py", line 319, in get_dataset
+    print(loader.dataset[0])
+  File "/home/zzz/spirl-master/spirl/data/tense/kitchen_data_loader.py", line 75, in __getitem__
+    seq = self._sample_seq()
+  File "/home/zzz/spirl-master/spirl/data/tense/kitchen_data_loader.py", line 87, in _sample_seq
+    return np.random.choice(self.seqs[self.start:self.end])
+  File "mtrand.pyx", line 908, in numpy.random.mtrand.RandomState.choice
+ValueError: 'a' cannot be empty unless no samples are taken

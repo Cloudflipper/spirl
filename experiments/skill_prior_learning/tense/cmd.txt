@@ -1,0 +1,156 @@
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1 --resume=False
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1 --resume=
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160 --train 1
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path spirl/configs/skill_prior_learning/tense --val_data_size 160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=16
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=80
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=120
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=256
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=256
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=256
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=256
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=256
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+
+python spirl/train.py --path=spirl/configs/skill_prior_learning/tense --val_data_size=160
+

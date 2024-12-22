@@ -1,0 +1,20 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 29.42it/s]
+len train dataset 12325
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 38.65it/s]
+len val dataset 160
+Running Testing
+Eval time for batch:  2.3138928413391113
+mse: 0.14087966160150245
+/home/zzz/spirl-master/spirl/utils/vis_utils.py:25: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  plt.xlim(0, array.shape[0] - 1)
+val 0: logging videos
+
+Test set: Average loss: 16.0539 in 2.87s
+
+the epoch is  100

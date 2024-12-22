@@ -1,0 +1,70 @@
+_wandb:
+    value:
+        cli_version: 0.18.5
+        m: []
+        python_version: 3.8.20
+        t:
+            "1":
+                - 1
+                - 41
+                - 55
+            "2":
+                - 1
+                - 41
+                - 55
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.8.20
+            "5": 0.18.5
+            "8":
+                - 5
+            "12": 0.18.5
+            "13": linux-x86_64
+ckpt_path:
+    value: null
+conf_path:
+    value: spirl/configs/skill_prior_learning/tense/conf.py
+data_dataset_spec_crop_rand_subseq:
+    value: true
+data_dataset_spec_env_name:
+    value: kitchen-mixed-v0
+data_dataset_spec_max_seq_len:
+    value: 280
+data_dataset_spec_n_actions:
+    value: 9
+data_dataset_spec_res:
+    value: 128
+data_dataset_spec_state_dim:
+    value: 60
+data_dataset_spec_subseq_len:
+    value: 2
+data_device:
+    value: cpu
+exp_dir:
+    value: ./experiments
+general_data_dir:
+    value: .
+general_epoch_cycles_train:
+    value: 10
+model_action_dim:
+    value: 9
+model_batch_size:
+    value: 128
+model_crop_rand_subseq:
+    value: true
+model_device:
+    value: cpu
+model_env_name:
+    value: kitchen-mixed-v0
+model_max_seq_len:
+    value: 280
+model_n_actions:
+    value: 9
+model_res:
+    value: 128
+model_state_dim:
+    value: 60
+model_subseq_len:
+    value: 2

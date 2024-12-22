@@ -1,0 +1,159 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 742
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len val dataset 160
+Running Testing
+
+Test set: Average loss: 5.6762 in 0.10s
+
+starting epoch  0
+/home/zzz/spirl-master/spirl/utils/pytorch_utils.py:339: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:1025.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 0 Train Epoch: 0 [0/50 (0%)]	Loss: 59.774841
+avg time for loading: 0.12s, logs: 0.01s, compute: 0.10s, total: 0.23s
+ETA: 0.06h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep0.pth!
+Running Testing
+
+Test set: Average loss: 4.3915 in 0.11s
+
+starting epoch  1
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 50 Train Epoch: 1 [0/50 (0%)]	Loss: 5.894436
+avg time for loading: 0.11s, logs: 0.00s, compute: 0.02s, total: 0.13s
+ETA: 0.04h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep1.pth!
+starting epoch  2
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 100 Train Epoch: 2 [0/50 (0%)]	Loss: 1.336472
+avg time for loading: 0.16s, logs: 0.01s, compute: 0.06s, total: 0.22s
+ETA: 0.06h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep2.pth!
+starting epoch  3
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 150 Train Epoch: 3 [0/50 (0%)]	Loss: -3.343492
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.12s
+ETA: 0.03h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep3.pth!
+starting epoch  4
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 200 Train Epoch: 4 [0/50 (0%)]	Loss: -5.721766
+avg time for loading: 0.09s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep4.pth!
+starting epoch  5
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 250 Train Epoch: 5 [0/50 (0%)]	Loss: -7.819791
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep5.pth!
+Running Testing
+
+Test set: Average loss: -11.2337 in 0.11s
+
+starting epoch  6
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 300 Train Epoch: 6 [0/50 (0%)]	Loss: -7.973439
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.12s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep6.pth!
+starting epoch  7
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 350 Train Epoch: 7 [0/50 (0%)]	Loss: -9.237193
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.02s, total: 0.12s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep7.pth!
+starting epoch  8
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 400 Train Epoch: 8 [0/50 (0%)]	Loss: -10.031656
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep8.pth!
+starting epoch  9
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 450 Train Epoch: 9 [0/50 (0%)]	Loss: -10.240510
+avg time for loading: 0.08s, logs: 0.00s, compute: 0.01s, total: 0.10s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep9.pth!
+starting epoch  10
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 500 Train Epoch: 10 [0/50 (0%)]	Loss: -10.092587
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.12s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep10.pth!
+Running Testing
+
+Test set: Average loss: -13.0885 in 0.11s
+
+starting epoch  11
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 550 Train Epoch: 11 [0/50 (0%)]	Loss: -10.468587
+avg time for loading: 0.11s, logs: 0.00s, compute: 0.01s, total: 0.13s
+ETA: 0.02h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep11.pth!
+starting epoch  12
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 600 Train Epoch: 12 [0/50 (0%)]	Loss: -10.443587
+avg time for loading: 0.09s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.01h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep12.pth!
+starting epoch  13
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 650 Train Epoch: 13 [0/50 (0%)]	Loss: -12.083239
+avg time for loading: 0.08s, logs: 0.00s, compute: 0.01s, total: 0.10s
+ETA: 0.01h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep13.pth!
+starting epoch  14
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 700 Train Epoch: 14 [0/50 (0%)]	Loss: -8.660940
+avg time for loading: 0.12s, logs: 0.00s, compute: 0.01s, total: 0.13s
+ETA: 0.01h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep14.pth!
+starting epoch  15
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 750 Train Epoch: 15 [0/50 (0%)]	Loss: -9.689795
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.12s
+ETA: 0.01h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 0 that is less than the current step 1. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep15.pth!
+Running Testing
+
+Test set: Average loss: -11.7631 in 0.11s
+
+starting epoch  16
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 800 Train Epoch: 16 [0/50 (0%)]	Loss: -10.102298
+avg time for loading: 0.10s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.01h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep16.pth!
+starting epoch  17
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 850 Train Epoch: 17 [0/50 (0%)]	Loss: -9.898757
+avg time for loading: 0.09s, logs: 0.00s, compute: 0.01s, total: 0.11s
+ETA: 0.00h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep17.pth!
+starting epoch  18
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 900 Train Epoch: 18 [0/50 (0%)]	Loss: -10.759473
+avg time for loading: 0.11s, logs: 0.00s, compute: 0.01s, total: 0.13s
+ETA: 0.00h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep18.pth!
+starting epoch  19
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 950 Train Epoch: 19 [0/50 (0%)]	Loss: -12.290133
+avg time for loading: 0.11s, logs: 0.00s, compute: 0.01s, total: 0.12s
+ETA: 0.00h
+Saved checkpoint to ./experiments/skill_prior_learning/tense/weights/weights_ep19.pth!

@@ -1,0 +1,19 @@
+
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug spirl/train.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/spirl/train.py",
+            "args": [
+                "--path", "spirl/configs/skill_prior_learning/tense",
+                "--val_data_size", "160"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

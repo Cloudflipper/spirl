@@ -1,0 +1,7 @@
+Creating window glfw
+Traceback (most recent call last):
+  File "spirl/rl/train.py", line 327, in <module>
+    RLTrainer(args=get_args())
+  File "spirl/rl/train.py", line 57, in __init__
+    self.conf.agent.env_params = self.env.agent_params      # (optional) set params from env for agent
+AttributeError: 'tensegrity_env' object has no attribute 'agent_params'

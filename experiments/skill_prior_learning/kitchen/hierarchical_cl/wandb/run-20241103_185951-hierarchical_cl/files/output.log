@@ -1,0 +1,28 @@
+/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/cuda/__init__.py:106: UserWarning:
+NVIDIA GeForce RTX 3050 Ti Laptop GPU with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3050 Ti Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+Traceback (most recent call last):
+  File "spirl/train.py", line 397, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 55, in __init__
+    self.logger, self.model, self.train_loader = self.build_phase(train_params, 'train')
+  File "spirl/train.py", line 291, in build_phase
+    model = params.model_class(self.conf.model, logger)
+  File "/home/zzz/spirl-master/spirl/models/skill_prior_mdl.py", line 38, in __init__
+    self.build_network()
+  File "/home/zzz/spirl-master/spirl/models/closed_loop_spirl_mdl.py", line 17, in build_network
+    self.q = self._build_inference_net()
+  File "/home/zzz/spirl-master/spirl/models/closed_loop_spirl_mdl.py", line 35, in _build_inference_net
+    BaseProcessingLSTM(self._hp, in_dim=input_size, out_dim=self._hp.nz_enc),
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 72, in __init__
+    super().__init__(CustomLSTMCell(hp, in_dim, out_dim))
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 151, in __init__
+    self.reset()
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 165, in reset
+    self.hidden_var = torch.zeros(self._hp.batch_size, self.get_state_size(), device=self._hp.device)
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

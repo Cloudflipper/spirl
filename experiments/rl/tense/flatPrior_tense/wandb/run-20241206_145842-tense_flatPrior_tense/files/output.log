@@ -1,0 +1,12 @@
+Action:--------------------------------------- [-0.44370773 -0.38244522 -0.16424564 -0.38501775 -0.3053053  -0.24258818] 20
+Creating window glfw
+Traceback (most recent call last):
+  File "spirl/rl/train.py", line 327, in <module>
+    RLTrainer(args=get_args())
+  File "spirl/rl/train.py", line 56, in __init__
+    self.env = self._hp.environment(self.conf.env)
+  File "/home/zzz/spirl-master/tensegrity_env/tensegrity_env/envs/tensegrity_env.py", line 243, in __init__
+    MujocoEnv.__init__(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/mujoco/mujoco_env.py", line 65, in __init__
+    assert not done
+AssertionError

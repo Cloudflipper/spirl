@@ -1,0 +1,22 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len train dataset 67790
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len val dataset 160
+Running Testing
+
+Test set: Average loss: 9.2220 in 1.13s
+
+starting epoch  0
+/home/zzz/spirl-master/spirl/utils/pytorch_utils.py:339: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:1025.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+GPU none: ./experiments/skill_prior_learning/kitchen/flat
+itr: 0 Train Epoch: 0 [0/5290 (0%)]	Loss: 64.383995
+avg time for loading: 0.97s, logs: 0.01s, compute: 0.09s, total: 1.08s
+ETA: 31.60h

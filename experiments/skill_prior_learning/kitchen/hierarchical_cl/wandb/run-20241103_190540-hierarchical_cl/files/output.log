@@ -1,0 +1,45 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+Traceback (most recent call last):
+  File "spirl/train.py", line 397, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 55, in __init__
+    self.logger, self.model, self.train_loader = self.build_phase(train_params, 'train')
+  File "spirl/train.py", line 299, in build_phase
+    loader = self.get_dataset(self.args, model, self.conf.data, phase, params.n_repeat, params.dataset_size)
+  File "spirl/train.py", line 308, in get_dataset
+    loader = dataset_class(self._hp.data_dir, data_conf, resolution=model.resolution,
+  File "/home/zzz/spirl-master/spirl/data/kitchen/src/kitchen_data_loader.py", line 24, in __init__
+    env = gym.make(self.spec.env_name)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/registration.py", line 156, in make
+    return registry.make(id, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/registration.py", line 101, in make
+    env = spec.make(**kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/registration.py", line 73, in make
+    env = cls(**_kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/utils/configurable.py", line 132, in __init__
+    base_init(self, *args, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/kitchen_envs.py", line 39, in __init__
+    super(KitchenBase, self).__init__(**kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/franka/kitchen_multitask_v0.py", line 181, in __init__
+    super(KitchenTaskRelaxV1, self).__init__()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/utils/configurable.py", line 132, in __init__
+    base_init(self, *args, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/franka/kitchen_multitask_v0.py", line 46, in __init__
+    super().__init__(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/robot_env.py", line 80, in __init__
+    super(RobotEnv, self).__init__(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/mujoco_env.py", line 62, in __init__
+    self.sim_robot = MujocoSimRobot(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/d4rl/kitchen/adept_envs/simulation/sim_robot.py", line 61, in __init__
+    self.sim = dm_mujoco.Physics.from_xml_path(model_file)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/dm_control/mujoco/engine.py", line 461, in from_xml_path
+    model = wrapper.MjModel.from_xml_path(file_path)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/dm_control/mujoco/wrapper/core.py", line 306, in from_xml_path
+    model_ptr = _get_model_ptr_from_xml(xml_path=xml_path)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/dm_control/mujoco/wrapper/core.py", line 181, in _get_model_ptr_from_xml
+    ptr = mujoco.MjModel.from_xml_path(xml_path, assets or {})
+ValueError: XML Error: top-level default class 'main' cannot be renamed
+Element 'default', line 0

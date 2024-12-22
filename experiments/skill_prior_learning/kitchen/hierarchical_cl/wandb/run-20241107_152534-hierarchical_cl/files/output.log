@@ -1,0 +1,51 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 23.88it/s]
+len train dataset 12325
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:00<00:00, 34.72it/s]
+len val dataset 160
+Running Testing
+Traceback (most recent call last):
+  File "spirl/train.py", line 397, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 76, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 107, in train
+    self.val()
+  File "spirl/train.py", line 193, in val
+    self.evaluator.eval(inputs, self.model_test)
+  File "/home/zzz/spirl-master/spirl/utils/general_utils.py", line 212, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/zzz/spirl-master/spirl/components/evaluator.py", line 55, in eval
+    model_output = model(inputs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/spirl-master/spirl/models/skill_prior_mdl.py", line 122, in forward
+    output.q = self._run_inference(inputs)
+  File "/home/zzz/spirl-master/spirl/models/closed_loop_spirl_mdl.py", line 42, in _run_inference
+    return MultivariateGaussian(self.q(inf_input)[:, -1])
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 79, in forward
+    return super().forward(AttrDict(cell_input=input), length=input.shape[1]).output
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 39, in forward
+    output = self.cell(**step_inputs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/spirl-master/spirl/modules/recurrent_modules.py", line 195, in forward
+    embedded = self.embed(cell_input.view(-1, self.input_size))
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 96, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/functional.py", line 1847, in linear
+    return torch._C._nn.linear(input, weight, bias)
+KeyboardInterrupt

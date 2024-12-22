@@ -1,0 +1,43 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 742
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len val dataset 160
+Running Testing
+
+Test set: Average loss: 5.5637 in 0.12s
+
+starting epoch  0
+Traceback (most recent call last):
+  File "spirl/train.py", line 405, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 79, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 113, in train
+    self.train_epoch(epoch)
+  File "spirl/train.py", line 138, in train_epoch
+    for self.batch_idx, sample_batched in enumerate(self.train_loader):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/zzz/spirl-master/spirl/data/tense/kitchen_data_loader.py", line 78, in __getitem__
+    start_idx = np.random.randint(0, seq.states.shape[0] - self.subseq_len - 1)
+  File "mtrand.pyx", line 746, in numpy.random.mtrand.RandomState.randint
+  File "_bounded_integers.pyx", line 1254, in numpy.random._bounded_integers._rand_int64
+ValueError: low >= high

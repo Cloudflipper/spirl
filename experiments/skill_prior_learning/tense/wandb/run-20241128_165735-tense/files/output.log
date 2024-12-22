@@ -1,0 +1,29 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+Traceback (most recent call last):
+  File "spirl/train.py", line 402, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 58, in __init__
+    self.logger, self.model, self.train_loader = self.build_phase(train_params, 'train')
+  File "spirl/train.py", line 304, in build_phase
+    loader = self.get_dataset(self.args, model, self.conf.data, phase, params.n_repeat, params.dataset_size)
+  File "spirl/train.py", line 313, in get_dataset
+    loader = dataset_class(self._hp.data_dir, data_conf, resolution=model.resolution,
+  File "/home/zzz/spirl-master/spirl/data/tense/kitchen_data_loader.py", line 27, in __init__
+    self.dataset = excel_parse("../data/atomic_trajectory_0.csv")
+  File "/home/zzz/spirl-master/spirl/excel.py", line 47, in excel_parse
+    data = pd.read_csv(file_path)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 678, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 932, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1216, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/common.py", line 786, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/atomic_trajectory_0.csv'

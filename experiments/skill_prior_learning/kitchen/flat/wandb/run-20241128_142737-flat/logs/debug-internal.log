@@ -1,0 +1,8 @@
+{"time":"2024-11-28T14:27:37.453149115-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-28T14:27:37.453202094-05:00","level":"INFO","msg":"created symlink","path":"experiments/skill_prior_learning/kitchen/flat/wandb/run-20241128_142737-flat/logs/debug-core.log"}
+{"time":"2024-11-28T14:27:38.840684674-05:00","level":"INFO","msg":"created new stream","id":"flat"}
+{"time":"2024-11-28T14:27:38.840776043-05:00","level":"INFO","msg":"stream: started","id":"flat"}
+{"time":"2024-11-28T14:27:38.840959139-05:00","level":"INFO","msg":"sender: started","stream_id":"flat"}
+{"time":"2024-11-28T14:27:38.840872518-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T14:27:38.840994527-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"flat"}}
+{"time":"2024-11-28T14:27:39.42621413-05:00","level":"INFO","msg":"Starting system monitor"}

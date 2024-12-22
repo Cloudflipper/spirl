@@ -1,0 +1,17 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+Traceback (most recent call last):
+  File "spirl/train.py", line 401, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 57, in __init__
+    self.logger, self.model, self.train_loader = self.build_phase(train_params, 'train')
+  File "spirl/train.py", line 303, in build_phase
+    loader = self.get_dataset(self.args, model, self.conf.data, phase, params.n_repeat, params.dataset_size)
+  File "spirl/train.py", line 312, in get_dataset
+    loader = dataset_class(self._hp.data_dir, data_conf, resolution=model.resolution,
+  File "/home/zzz/spirl-master/spirl/data/tense/kitchen_data_loader.py", line 27, in __init__
+    self.dataset = pd.read_hdf('your_file.h5', key='dataset_name')
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/pandas/io/pytables.py", line 427, in read_hdf
+    raise FileNotFoundError(f"File {path_or_buf} does not exist")
+FileNotFoundError: File your_file.h5 does not exist

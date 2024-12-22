@@ -1,0 +1,14 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len train dataset 67790
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len val dataset 160
+Running Testing
+
+Test set: Average loss: 9.4627 in 0.33s
+
+starting epoch  0
+torch.Size([128, 2, 60])

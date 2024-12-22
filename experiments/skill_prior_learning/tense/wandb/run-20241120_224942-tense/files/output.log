@@ -1,0 +1,58 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len train dataset 67790
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+len val dataset 160
+Running Testing
+
+Test set: Average loss: 8.4719 in 0.51s
+
+starting epoch  0
+/home/zzz/spirl-master/spirl/utils/pytorch_utils.py:339: UserWarning: This overload of addcmul_ is deprecated:
+	addcmul_(Number value, Tensor tensor1, Tensor tensor2)
+Consider using one of the following signatures instead:
+	addcmul_(Tensor tensor1, Tensor tensor2, *, Number value) (Triggered internally at  /pytorch/torch/csrc/utils/python_arg_parser.cpp:1025.)
+  exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+GPU none: ./experiments/skill_prior_learning/tense
+itr: 0 Train Epoch: 0 [0/5290 (0%)]	Loss: 80.684273
+avg time for loading: 0.48s, logs: 0.00s, compute: 0.04s, total: 0.52s
+ETA: 15.31h
+Traceback (most recent call last):
+  File "spirl/train.py", line 399, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 78, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 112, in train
+    self.train_epoch(epoch)
+  File "spirl/train.py", line 137, in train_epoch
+    for self.batch_idx, sample_batched in enumerate(self.train_loader):
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1186, in _next_data
+    idx, data = self._get_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1152, in _get_data
+    success, data = self._try_get_data()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 990, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 289, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt

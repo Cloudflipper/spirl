@@ -1,0 +1,274 @@
+Reading configurations for Franka
+[40m[97mInitializing Franka sim[0m
+exp_dir:	./experiments
+conf_path:	spirl/configs/hrl/kitchen/spirl_cl/conf.py
+general:
+	seed:	0
+	agent:	<class 'spirl.rl.components.agent.FixedIntervalHierarchicalAgent'>
+	environment:	<class 'spirl.rl.envs.kitchen.KitchenEnv'>
+	sampler:	<class 'spirl.rl.components.sampler.HierarchicalSampler'>
+	data_dir:	.
+	num_epochs:	15
+	max_rollout_len:	280
+	n_steps_per_epoch:	100000
+	n_warmup_steps:	5000.0
+agent:
+	hl_agent:	<class 'spirl.rl.agents.prior_sac_agent.ActionPriorSACAgent'>
+	hl_agent_params:
+		batch_size:	256
+		replay:	<class 'spirl.rl.components.replay_buffer.UniformReplayBuffer'>
+		replay_params:
+		clip_q_target:	False
+		policy:	<class 'spirl.rl.policies.prior_policies.LearnedPriorAugmentedPIPolicy'>
+		policy_params:
+			action_dim:	10
+			input_dim:	60
+			max_action_range:	2.0
+			nz_mid:	256
+			n_layers:	5
+			prior_model:	<class 'spirl.models.closed_loop_spirl_mdl.ClSPiRLMdl'>
+			prior_model_params:
+				state_dim:	60
+				action_dim:	9
+				kl_div_weight:	0.0005
+				nz_enc:	128
+				nz_mid:	128
+				n_processing_layers:	5
+				nz_vae:	10
+				n_rollout_steps:	10
+				cond_decode:	True
+			prior_model_checkpoint:	./experiments/skill_prior_learning/kitchen/hierarchical_cl
+		critic:	<class 'spirl.rl.components.critic.MLPCritic'>
+		critic_params:
+			action_dim:	10
+			input_dim:	60
+			output_dim:	1
+			n_layers:	5
+			nz_mid:	256
+			action_input:	True
+		td_schedule_params:
+			p:	5.0
+	ll_agent:	<class 'spirl.rl.agents.ac_agent.SACAgent'>
+	ll_agent_params:
+		policy:	<class 'spirl.rl.policies.cl_model_policies.ClModelPolicy'>
+		policy_params:
+			policy_model:	<class 'spirl.models.closed_loop_spirl_mdl.ClSPiRLMdl'>
+			policy_model_params:
+				state_dim:	60
+				action_dim:	9
+				kl_div_weight:	0.0005
+				nz_enc:	128
+				nz_mid:	128
+				n_processing_layers:	5
+				nz_vae:	10
+				n_rollout_steps:	10
+				cond_decode:	True
+			policy_model_checkpoint:	./experiments/skill_prior_learning/kitchen/hierarchical_cl
+			state_dim:	60
+			action_dim:	9
+			kl_div_weight:	0.0005
+			nz_enc:	128
+			nz_mid:	128
+			n_processing_layers:	5
+			nz_vae:	10
+			n_rollout_steps:	10
+			cond_decode:	True
+		critic:	<class 'spirl.rl.components.critic.MLPCritic'>
+		critic_params:
+			action_dim:	10
+			input_dim:	60
+			output_dim:	1
+			n_layers:	5
+			nz_mid:	256
+			action_input:	True
+	hl_interval:	10
+	log_video_caption:	True
+	update_ll:	False
+	device:	cpu
+	env_params:
+data:
+	dataset_spec:
+		dataset_class:	<class 'spirl.data.kitchen.src.kitchen_data_loader.D4RLSequenceSplitDataset'>
+		n_actions:	9
+		state_dim:	60
+		env_name:	kitchen-mixed-v0
+		res:	128
+		crop_rand_subseq:	True
+		max_seq_len:	280
+env:
+	reward_norm:	1.0
+	device:	cpu
+	seed:	0
+sampler:
+ckpt_path:	None
+notes:	hierarchical RL on the kitchen env
+mpi:
+	rank:	0
+	is_chef:	True
+	num_workers:	1
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+Loading from: ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights
+=> loading checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth'
+=> loaded checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth' (epoch 34)
+Loading from: ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights
+=> loading checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth'
+=> loaded checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth' (epoch 34)
+Loading from: ./experiments/skill_prior_learning/kitchen/hierarchical_cl/weights
+=> loading checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth'
+=> loaded checkpoint './experiments/skill_prior_learning/kitchen/hierarchical_cl/weights/weights_ep34.pth' (epoch 34)
+Warmup data collection for 5000.0 steps...
+Sample step 1000
+Sample step 2000
+Sample step 3000
+Sample step 4000
+Sample step 5000
+...Warmup done!
+Epoch 0
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 271 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 551 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 831 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 1111 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 1391 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 1671 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 1951 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2231 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2511 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 2791 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 3071 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 3351 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 3631 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 3911 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4191 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4471 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 4751 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 5031 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 5311 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 5591 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 5871 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 6151 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 6431 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 6711 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 6991 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 7271 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 7551 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 7831 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 8111 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 8391 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 8671 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 8951 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9231 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9511 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 9791 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 10001/2000000 (1%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.29s
+ETA: 159.99h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10001 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10071 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10351 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10631 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 10911 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 11191 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 11471 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 11751 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 12031 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 12311 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 12591 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 12871 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 13151 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 13431 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 13711 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 13991 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14271 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14551 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 14831 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 15111 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 15391 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 15671 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 15951 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 16231 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 16511 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 16791 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 17071 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 17351 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 17631 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 17911 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 18191 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 18471 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 18751 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19031 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19311 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19591 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 20001/2000000 (1%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.30s
+ETA: 163.41h
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 19871 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20001 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20151 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20431 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20711 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 20991 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 21271 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 21551 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 21831 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 22111 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 22391 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 22671 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 22951 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 23231 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 23511 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 23791 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24071 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24351 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24631 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 24911 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 25191 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 25471 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 25751 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 26031 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 26311 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 26591 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 26871 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 27151 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 27431 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 27711 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 27991 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28271 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28551 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+[34m[1mwandb[0m: [33mWARNING[0m Tried to log to step 28831 that is less than the current step 28832. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 30001/2000000 (2%)]
+avg time for rollout: 0.24s, update: 0.06s, logs: 0.00s, total: 0.30s
+ETA: 164.02h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 39993/2000000 (2%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.30s
+ETA: 162.09h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 49993/2000000 (2%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.30s
+ETA: 160.60h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 59993/2000000 (3%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.30s
+ETA: 159.15h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 69992/2000000 (3%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.29s
+ETA: 158.08h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 79986/2000000 (4%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.29s
+ETA: 157.03h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 89986/2000000 (4%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.29s
+ETA: 155.94h
+GPU none: ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0
+Train Epoch: 0 [It 99986/2000000 (5%)]
+avg time for rollout: 0.23s, update: 0.06s, logs: 0.00s, total: 0.29s
+ETA: 155.04h
+Saved checkpoint to ./experiments/hrl/kitchen/spirl_cl/SPIRL_kitchen_seed0/weights/weights_ep0.pth!
+Eval rollout time:  281.53237986564636

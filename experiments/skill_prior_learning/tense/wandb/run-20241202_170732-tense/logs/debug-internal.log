@@ -1,0 +1,19 @@
+{"time":"2024-12-02T17:07:32.878806657-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-12-02T17:07:32.878836052-05:00","level":"INFO","msg":"created symlink","path":"experiments/skill_prior_learning/tense/wandb/run-20241202_170732-tense/logs/debug-core.log"}
+{"time":"2024-12-02T17:07:33.64530441-05:00","level":"INFO","msg":"created new stream","id":"tense"}
+{"time":"2024-12-02T17:07:33.645454946-05:00","level":"INFO","msg":"stream: started","id":"tense"}
+{"time":"2024-12-02T17:07:33.645388725-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tense"}}
+{"time":"2024-12-02T17:07:33.646239862-05:00","level":"INFO","msg":"sender: started","stream_id":"tense"}
+{"time":"2024-12-02T17:07:33.646242206-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tense"}}
+{"time":"2024-12-02T17:07:33.996782915-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-02T17:07:34.793654281-05:00","level":"INFO","msg":"stream: closing","id":"tense"}
+{"time":"2024-12-02T17:07:34.793733057-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-02T17:07:34.794851028-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-02T17:07:34.839648554-05:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-12-02T17:07:34.839726694-05:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-12-02T17:07:34.839747797-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-12-02T17:07:35.191593533-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-02T17:07:35.319631419-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tense"}}
+{"time":"2024-12-02T17:07:35.31966351-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tense"}}
+{"time":"2024-12-02T17:07:35.319708838-05:00","level":"INFO","msg":"sender: closed","stream_id":"tense"}
+{"time":"2024-12-02T17:07:35.319740616-05:00","level":"INFO","msg":"stream: closed","id":"tense"}

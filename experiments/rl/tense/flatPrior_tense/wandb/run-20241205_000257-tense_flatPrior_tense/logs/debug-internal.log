@@ -1,0 +1,19 @@
+{"time":"2024-12-05T00:02:57.184922965-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-12-05T00:02:57.185007575-05:00","level":"INFO","msg":"created symlink","path":"experiments/rl/tense/flatPrior_tense/wandb/run-20241205_000257-tense_flatPrior_tense/logs/debug-core.log"}
+{"time":"2024-12-05T00:02:57.697363219-05:00","level":"INFO","msg":"created new stream","id":"tense_flatPrior_tense"}
+{"time":"2024-12-05T00:02:57.697409104-05:00","level":"INFO","msg":"stream: started","id":"tense_flatPrior_tense"}
+{"time":"2024-12-05T00:02:57.697448057-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tense_flatPrior_tense"}}
+{"time":"2024-12-05T00:02:57.697578752-05:00","level":"INFO","msg":"sender: started","stream_id":"tense_flatPrior_tense"}
+{"time":"2024-12-05T00:02:57.697659133-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tense_flatPrior_tense"}}
+{"time":"2024-12-05T00:02:58.147176981-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-05T00:02:58.251516451-05:00","level":"INFO","msg":"stream: closing","id":"tense_flatPrior_tense"}
+{"time":"2024-12-05T00:02:58.251616959-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-05T00:02:58.512833988-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-05T00:02:58.561974479-05:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-12-05T00:02:58.561997645-05:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-12-05T00:02:58.562000999-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-12-05T00:02:58.935497978-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-05T00:02:59.157575306-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tense_flatPrior_tense"}}
+{"time":"2024-12-05T00:02:59.157625983-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tense_flatPrior_tense"}}
+{"time":"2024-12-05T00:02:59.1576516-05:00","level":"INFO","msg":"sender: closed","stream_id":"tense_flatPrior_tense"}
+{"time":"2024-12-05T00:02:59.157671233-05:00","level":"INFO","msg":"stream: closed","id":"tense_flatPrior_tense"}

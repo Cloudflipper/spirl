@@ -1,0 +1,204 @@
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+
+python spirl/rl/train.py --path=spirl/configs/rl/tense --seed=0 --prefix=flatPrior_tense
+

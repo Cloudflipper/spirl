@@ -1,0 +1,20 @@
+_____------------------------ dict_items([('reward_norm', 1.0), ('device', device(type='cpu')), ('seed', 0)])
+Traceback (most recent call last):
+  File "/home/zzz/spirl-master/spirl/utils/general_utils.py", line 68, in __getattr__
+    return self.__getitem__(attr)
+KeyError: 'startswith'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "spirl/rl/train.py", line 327, in <module>
+    RLTrainer(args=get_args())
+  File "spirl/rl/train.py", line 56, in __init__
+    self.env = self._hp.environment(self.conf.env)
+  File "/home/zzz/spirl-master/tensegrity_env/tensegrity_env/envs/tensegrity_env.py", line 242, in __init__
+    MujocoEnv.__init__(
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/gym/envs/mujoco/mujoco_env.py", line 40, in __init__
+    if model_path.startswith("/"):
+  File "/home/zzz/spirl-master/spirl/utils/general_utils.py", line 70, in __getattr__
+    raise AttributeError("Attribute %r not found" % attr)
+AttributeError: Attribute 'startswith' not found

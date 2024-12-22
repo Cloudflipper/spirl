@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":107},"_step":950,"val/nll_loss":-11.763129234313965,"_timestamp":1.732864463450586e+09,"train/gradients/max_norm":184.95779418945312,"train/total_loss":-12.290133476257324,"_runtime":92.652951044,"val/total_loss":-11.763129234313965,"train/gradients/mean_norm":19.164714813232425,"train/nll_loss":-12.290133476257324}

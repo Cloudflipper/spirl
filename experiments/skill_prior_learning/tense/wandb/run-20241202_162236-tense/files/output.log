@@ -1,0 +1,25 @@
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len train dataset 742
+/home/zzz/spirl-master/spirl/modules/layers.py:12: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  nn.init.xavier_normal(m.weight.data)
+self.spec.env_name:  tensegrity_env-v0
+len val dataset 160
+Running Testing
+Traceback (most recent call last):
+  File "spirl/train.py", line 405, in <module>
+    ModelTrainer(args=get_args())
+  File "spirl/train.py", line 79, in __init__
+    self.train(start_epoch)
+  File "spirl/train.py", line 110, in train
+    self.val()
+  File "spirl/train.py", line 199, in val
+    self.evaluator.eval(inputs, self.model_test)
+  File "/home/zzz/spirl-master/spirl/components/evaluator.py", line 183, in eval
+    return model(inputs)
+  File "/home/zzz/miniconda3/envs/mujoco/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/zzz/spirl-master/spirl/models/bc_mdl.py", line 53, in forward
+    file.write(inputs)
+TypeError: write() argument must be str, not AttrDict

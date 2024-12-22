@@ -1,0 +1,18 @@
+{
+  "os":  "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.17",
+  "python":  "3.8.20",
+  "startedAt":  "2024-12-05T05:03:21.216493Z",
+  "args":  [
+    "--path=spirl/configs/rl/tense",
+    "--seed=0",
+    "--prefix=flatPrior_tense"
+  ],
+  "program":  "spirl/rl/train.py",
+  "codePath":  "spirl/rl/train.py",
+  "email":  "cldflpr@umich.edu",
+  "root":  "./experiments/rl/tense/flatPrior_tense",
+  "host":  "lmr",
+  "username":  "zzz",
+  "executable":  "/home/zzz/miniconda3/envs/mujoco/bin/python3",
+  "codePathLocal":  "spirl/rl/train.py"
+}

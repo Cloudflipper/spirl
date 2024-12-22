@@ -1,0 +1,19 @@
+{"time":"2024-11-29T01:39:08.979688926-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-29T01:39:08.979740238-05:00","level":"INFO","msg":"created symlink","path":"experiments/skill_prior_learning/tense/wandb/run-20241129_013908-tense/logs/debug-core.log"}
+{"time":"2024-11-29T01:39:09.542332525-05:00","level":"INFO","msg":"created new stream","id":"tense"}
+{"time":"2024-11-29T01:39:09.542377244-05:00","level":"INFO","msg":"stream: started","id":"tense"}
+{"time":"2024-11-29T01:39:09.542496315-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T01:39:09.543788157-05:00","level":"INFO","msg":"sender: started","stream_id":"tense"}
+{"time":"2024-11-29T01:39:09.54380015-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T01:39:10.045453914-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-29T01:39:10.614370733-05:00","level":"INFO","msg":"stream: closing","id":"tense"}
+{"time":"2024-11-29T01:39:10.614424153-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-29T01:39:10.615735619-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-29T01:39:10.673044696-05:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-29T01:39:10.673081139-05:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-29T01:39:10.673086164-05:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-29T01:39:11.010746609-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-29T01:39:11.181829009-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T01:39:11.181875277-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tense"}}
+{"time":"2024-11-29T01:39:11.181895441-05:00","level":"INFO","msg":"sender: closed","stream_id":"tense"}
+{"time":"2024-11-29T01:39:11.182776663-05:00","level":"INFO","msg":"stream: closed","id":"tense"}
